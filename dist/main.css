@@ -398,17 +398,11 @@
   .h-\[330px\] {
     height: 330px;
   }
-  .h-\[360px\] {
-    height: 360px;
-  }
   .h-\[400px\] {
     height: 400px;
   }
   .h-\[440px\] {
     height: 440px;
-  }
-  .h-\[446px\] {
-    height: 446px;
   }
   .h-\[500px\] {
     height: 500px;
@@ -461,7 +455,6 @@
   .w-\[205px\] {
     width: 205px;
   }
-  }
   .w-\[215px\] {
     width: 215px;
   }
@@ -506,9 +499,6 @@
   }
   .w-\[800px\] {
     width: 800px;
-  }
-  .w-\[900px\] {
-    width: 900px;
   }
   .w-\[1110px\] {
     width: 1110px;
@@ -587,6 +577,9 @@
   }
   .justify-self-center {
     justify-self: center;
+  }
+  .\!overflow-hidden {
+    overflow: hidden !important;
   }
   .overflow-hidden {
     overflow: hidden;
@@ -896,9 +889,19 @@
       margin-inline: 1px;
     }
   }
+  .max-\[1200px\]\:w-\[830px\] {
+    @media (width < 1200px) {
+      width: 830px;
+    }
+  }
   .max-\[1200px\]\:w-\[930px\] {
     @media (width < 1200px) {
       width: 930px;
+    }
+  }
+  .max-\[1200px\]\:justify-center {
+    @media (width < 1200px) {
+      justify-content: center;
     }
   }
   .max-\[1150px\]\:ml-\[15px\] {
@@ -909,6 +912,11 @@
   .max-\[1116px\]\:w-\[920px\] {
     @media (width < 1116px) {
       width: 920px;
+    }
+  }
+  .max-\[1010px\]\:w-auto {
+    @media (width < 1010px) {
+      width: auto;
     }
   }
   .max-\[990px\]\:mr-\[400px\] {
@@ -934,11 +942,6 @@
   .max-\[990px\]\:w-\[690px\] {
     @media (width < 990px) {
       width: 690px;
-    }
-  }
-  .max-\[990px\]\:w-\[720px\] {
-    @media (width < 990px) {
-      width: 720px;
     }
   }
   .max-\[990px\]\:w-auto {
@@ -981,6 +984,31 @@
       display: none !important;
     }
   }
+}
+.swiper-pagination-bullet-active {
+  background-color: #7dc01d;
+}
+.swiper {
+  margin: auto;
+  width: 1110px;
+}
+@media (max-width:1200px) {
+  .swiper {
+    width: 930px;
+  }
+}
+@media (max-width:990px) {
+  .swiper {
+    width: 690px;
+  }
+}
+@media (max-width:730px) {
+  .swiper {
+    width: 530px;
+  }
+}
+.swiper-slide {
+  overflow: hidden;
 }
 @property --tw-rotate-x {
   syntax: "*";
@@ -1113,4 +1141,3 @@
     }
   }
 }
-
