@@ -29,3 +29,6 @@
 }
 }
 
+.swiper-slide {
+	overflow: hidden
+}
