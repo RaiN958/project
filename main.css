@@ -12,22 +12,20 @@
 }
 
 @media (max-width:1200px) {
-.swiper
-	{
+.swiper	{
 	width: 930px;
 }
 }
 
 @media (max-width:990px) {
-.swiper
-	{
+.swiper	{
 	width: 690px;
 }
 }
 
 @media (max-width:730px) {
-.swiper
-	{
+.swiper	{
 	width: 530px;
 }
 }
+
