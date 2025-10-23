@@ -24,11 +24,14 @@
 }
 
 @media (max-width:730px) {
-.swiper	{
-	width: 530px;
+.swiper
+	{
+	overflow: hidden;
+	width: auto;
 }
 }
 
 .swiper-slide {
 	overflow: hidden
 }
+
