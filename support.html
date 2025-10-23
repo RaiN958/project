@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Title</title>
+		<link rel="stylesheet" href="main.css" />
+		<link rel="stylesheet" href="dist/main.css" />
+		<link rel="stylesheet" href="normalize.css" />
+	</head>
+	<body>
+		<div class="navigate h-[67px] bg-[#222] outline-[black] sticky top-0 z-[100] ">
+			<div class="flex mx-[103px] max-[1200px]:mx-[1px]">
+			<div class="logo mr-[150px] p-[16px]">
+				<a href="index.html">
+				<img src="logo.png" class="min-w-max">
+				</a>
+			</div>
+				<div class="flex text-center items-center text-[.875rem] max-[990px]:hidden">
+					<div class="text-[#fff] overflow-hidden w-[127px] h-[42px] mt-[20px] duration-150 hover:text-[#527e13] hover:border-b-[5px]">
+						<a href="aboutcompany.html">
+					О КОМПАНИИ
+						</a>
+					</div>
+					<div class="text-[#fff] overflow-hidden w-[127px] h-[42px] mt-[20px] duration-150 hover:text-[#527e13] hover:border-b-[5px]">
+						<a href="products.html"> 
+					ПРОДУКТЫ
+						</a>
+					</div>
+					<div class="text-[#fff] overflow-hidden w-[127px] h-[42px] mt-[20px] duration-150 hover:text-[#527e13] hover:border-b-[5px]">
+						<a href="resheniya.html">
+						РЕШЕНИЯ
+						</a>
+					</div>
+					<div class="text-[#fff] overflow-hidden w-[127px] h-[42px] mt-[20px] duration-150 hover:text-[#527e13] hover:border-b-[5px]">
+						<a href="support.html">
+						
+						ПОДДЕРЖКА
+						
+						</a>
+					</div>
+					<div class="text-[#fff] overflow-hidden w-[170px] h-[42px] mt-[20px] duration-150 hover:text-[#527e13] hover:border-b-[5px]">
+						<a href="offers.html">
+						
+						СПЕЦПРЕДЛОЖЕНИЯ
+						
+						</a>
+					</div>
+					<div class="text-[#7dc01d] overflow-hidden w-[127px] h-[42px] mt-[20px] duration-150 hover:text-[#527e13] hover:border-b-[5px]">
+						<a href="tel:">+7 495 795-02-95</a>
+					</div>
+				</div>
+				<div class="menu-toggle absolute right-0 mt-[20px] mr-[10px] hidden max-[990px]:block cursor-pointer transition-discrete " id="menu-toggle">
+							<img src="img/list-svgrepo-com.svg" />
+						</div>
+			</div>
+		</div>
+    <nav class="nav absolute sticky top-[67px] z-[100] fixed z-20 bg-[#222] right-0 text-[white] w-[470px text-lg p-[10px] hidden transition-discrete min-[991px]:!hidden " id="nav">
+      <ul>
+		  <div class="mb-[10px] ml-[10px]"><button class="accordion">О компании</button>
+			  <div class="hidden">
+				  <ul class="ml-[30px] text-sm">
+			  <li class="mb-[10px]" ><a href="aboutcompany.html" class="mb-[10px]">
+			О НАС
+				</a>
+			  <li class="mb-[10px]"><a href="news.html" >
+			НОВОСТИ
+				  </a></li>
+					<li class="mb-[10px]"><a href="partners.html" >
+			ПАРТНЕРЫ
+				  </a></li>
+					<li class="mb-[10px]"><a href="primervnedr.html" >
+			ПРИМЕРЫ ВНЕДРЕНИЙ
+				  </a></li>
+					<li class="mb-[10px]"><a href="licenses.html" >
+			СЕРТИФИКАТЫ И ЛИЦЕНЗИИ
+				  </a></li>
+					<li class="mb-[10px]"><a href="jobopenings.html" >
+			ВАКАНСИИ
+				  </a></li>
+					<li class="mb-[10px]"><a href="contatcs.html" >
+			КОНТАКТЫ
+				  </a></li>
+					  </ul>
+			  </div>
+		  </div>
+		  <li class="mb-[10px] ml-[10px]"><a href="products.html">Продукты</a></li>
+		  <li class="mb-[10px] ml-[10px]"><a href="resheniya.html">Решения</a></li>
+		  <div class="mb-[10px] ml-[10px]"><button class="accordion">Поддержка</button>
+			  <div class="hidden text-sm ml-[30px]">
+			  <li class="mb-[10px]" ><a href="support.html" class="mb-[10px]">
+			Техническая поддержка
+				</a>
+			  <li class="mb-[10px]"><a href="outsorcing.html" >
+			Аутсорсинг
+				  </a></li>
+					<li class="mb-[10px]"><a href="support_garantiya.html" >
+			Гарантийная подержка
+				  </a></li>
+					<li class="mb-[10px]"><a href="packets-standart-and-rashirenie.html" >
+			Пакеты стандартной и расширенной гарантии
+				  </a></li>
+					<li class="mb-[10px]"><a href="ask_and_question.html" >
+			Вопросы и ответы
+				  </a></li>
+			  </div>
+		  </div>
+		  <li class="mb-[10px] ml-[10px]"><a href="offers.html">Спецпредложения</a></li>
+		<li class="mb-[10px] ml-[10px] text-[#7dc01d] duration-150 hover:text-[#527e13] ">+7 495 795-02-95</li>
+      </ul>
+    </nav>
+		<script>
+  const toggleBtn = document.getElementById('menu-toggle');
+  const navMenu = document.getElementById('nav');
+
+  toggleBtn.addEventListener('click', () => {
+    if (navMenu.style.display === 'block') {
+      navMenu.style.display = 'none';
+    } else {
+      navMenu.style.display = 'block';
+    }
+  });
+</script>
+		<script src="accordeon.js"></script>
+		<div class="bg-[#7dc01d] h-[50px] sticky top-[67px] z-[100] max-[990px]:hidden">
+			<div class="text-[white] ml-[150px] max-[1150px]:ml-[15px] text-[13px] pt-[14px] text-sm gap-[15px] flex flex-nowrap">
+				<a class="font-bold" href="support.html">
+			ТЕХНИЧЕСКАЯ ПОДДЕРЖКА
+				</a>
+				<a href="outsorcing.html">
+			АУТСОРСИНГ
+				</a>
+				<a href="support_garantiya.html">
+			ГАРАНТИЙНАЯ ПОДДЕРКА
+				</a>
+				<a href="packets-standart-and-rashirenie.html">
+			ПАКЕТЫ СТАНДАРТНОЙ И РАСШИРЕННОЙ ГАРАНТИИ
+				</a>
+				<a href="ask_and_question.html">
+			ВОПРОСЫ И ОТВЕТЫ
+				</a>
+			</div>
+		</div>
+		<div class="justify-items-center">
+			<h1 class="">Поддержка</h1>
+			<div>
+				<img src="lines.svg" class="justify-items-center w-[100px] mb-[25px]" />
+			</div>
+		</div>
+		<div class="mb-[30px] text-center w-[1200px] max-[1200px]:w-[930px] max-[990px]:w-[690px] max-[760px]:w-[510px] m-auto">
+							<p class="mb-[20px]">
+								Компания «СВЕТ Компьютерс» стремится поддерживать с клиентами долгосрочные взаимовыгодные отношения.
+							</p>
+							<p>
+								Мы предлагаем своим клиентам исчерпывающие консультации на этапе принятия решения о покупке и в процессе эксплуатации,
+расширение стандартной гарантии, аутсорсинг, программы «Try&Buy», моделирование задачи заказчика в центре технической экспертизы.
+							</p>
+						</div>
+						<div class="bg-[url(support_bg.jpg)] bg-cover flex flex-wrap py-[50px] w-full justify-center text-[#7dc01d]">
+							<a href="outsorcing.html">
+							<div class="w-[255px] h-[169px] justify-items-center">
+								
+						<div class="w-[90px] h-[90px] rounded-tl-[0%]">
+					<div class=" w-[60px] h-[60px] m-auto pt-[20px]">
+						<img src="share-connection-data-svgrepo-com.svg" class="">
+							</div>
+						</div>
+					<div>Аутсорсинг</div>
+								
+					</div>
+							</a>
+							<a href="support_garantiya.html">
+					<div class="w-[255px] h-[169px] justify-items-center">
+						<div class=" w-[90px] h-[90px] rounded-tl-[0%]">
+					<div class=" w-[60px] h-[60px] m-auto pt-[20px]">
+						<img src="umbrella-svgrepo-com.svg" class="">
+							</div>
+						</div>
+					<div>Гарантийная поддержка</div>
+					</div>
+							</a>
+							<a href="packets-standart-and-rashirenie.html">
+					<div class="w-[255px] h-[169px] justify-items-center">
+						<div class=" w-[90px] h-[90px]  rounded-tl-[0%]">
+					<div class=" w-[60px] h-[60px] m-auto pt-[20px]">
+						<img src="computer-hardware-laptop-monitor-notebook-pc-svgrepo-com.svg" class="">
+							</div>
+						</div>
+					<div class="w-[150px]">Условия гарантии Intellect Digital</div>
+					</div>
+							</a>
+							<a href="ask_and_question.html">
+					<div class="w-[255px] h-[169px] justify-items-center">
+						<div class="w-[90px] h-[90px] rounded-tl-[0%]">
+					<div class=" w-[60px] h-[60px] m-auto pt-[20px]">
+						<img src="chat-bubble-dots-svgrepo-com.svg" class="">
+							</div>
+						</div>
+					<div>Вопрос ответ</div>
+					</div>
+							</a>
+						</div>
+		<div>
+			<div class="w-[1200px] max-[1200px]:w-[930px] max-[990px]:w-[690px] max-[760px]:w-[510px] m-auto">
+				<div class="row justify-content-center">
+					<div class="row">
+						<div class="container">
+	<div class="row mb-4">
+		<div class="col-12 text-center">
+			<p>Если у вас возникли вопросы технического характера, вы можете обратиться за консультацией,<br>
+				заполнив форму или связавшись с нами по телефону: +7 (495) 795-02-95.</p>
+		</div>
+	</div>
+	<form name="SIMPLE_FORM_1" action="/support/" method="POST" enctype="multipart/form-data"><input type="hidden" name="sessid" id="sessid" value="de3ee6b35088a0800315ba38129aa43e"><input type="hidden" name="WEB_FORM_ID" value="1">	
+		<div class="form-row flex flex-wrap  mb-[50px]">
+		<div class="col-md-6 w-[550px]">
+			<div class="form-group w-[565px] h-[62px]">
+				<label for="#input-name">Представьтесь, пожалуйста</label>
+				<input class="form-control w-[539px] h-[34px] border rounded-md px-[10px]" id="input-name" type="text" name="form_text_1" value="">
+			</div>
+			<div class="form-group w-[565px] h-[62px]">
+				<label for="">Телефон</label>
+				<input class="form-control w-[539px] h-[34px] border rounded-md px-[10px]" id="input-tel" type="tel" name="form_text_2" value="">
+			</div>
+			<div class="form-group w-[565px] h-[62px]">
+				<label for="">Электронная почта</label>
+				<input class="form-control w-[539px] h-[34px] border rounded-md px-[10px]" id="input-email" type="email" name="form_email_3" value="">
+			</div>
+		</div>
+		<div class="col-md-6 w-[550px]">
+			<div class="form-group w-[565px] ">
+				<label for="#problem">Описание проблемы</label>
+				<textarea class="form-control w-[539px] border rounded-md px-[10px]l" id="problem" name="" cols="30" rows="10">								</textarea>
+			</div>
+			<div class="form-link-container mb-3 mb-[20px] w-[565px] text-[#7dc01d] hover:text-[#527e13] hover:underline w-[1110px] max-[1200px]:w-[930px] max-[990px]:w-[690px] max-[760px]:w-[510px] mb-[20px] m-auto"><a class="" href="personalniedannie.html" target="_blank">Нажимая на кнопку «Отправить», я
+					принимаю условия пользовательского соглашения и даю согласие на обработку моих
+					персональных данных.</a></div>
+			<div class="form-group w-[565px] h-[62px]">
+				<input type="hidden" name="web_form_submit" value="Отправить">
+				<button class="btn btn-success pull-right topSpace bg-[#28a745] hover:bg-[#527e13] py-[6px] px-[12px] rounded-md text-[white] mt-[20px]" type="submit">ОТПРАВИТЬ</button>
+			</div>
+		</div>
+	</div>
+	</form>
+</div>
+					</div>
+				</div>
+			</div>
+			<div class=" bg-[#282828] flex flex-wrap justify-center gap-[10px] p-[10px] m-auto">
+				<ul class="text-[white] list-image-[url(svg_arrow.svg)] w-[300px]"> О компании 
+					<li class="mb-[10px] mt-[10px] text-[#797979] ml-[20px] hover:underline"><a href="aboutcompany.html">О нас</a></li>
+					<li class="mb-[10px] mt-[10px] text-[#797979] ml-[20px] hover:underline"><a>Мероприятия</a></li>
+					<li class="mb-[10px] mt-[10px] text-[#797979] ml-[20px] hover:underline"><a href="partners.html">Партнеры</a></li>
+					<li class="mb-[10px] mt-[10px] text-[#797979] ml-[20px] hover:underline"><a href="primervnedr.html">Примеры внедрений</a></li>
+					<li class="mb-[10px] mt-[10px] text-[#797979] ml-[20px] hover:underline"><a href="jobopenings.html">Вакансии</a></li>
+					<li class="mb-[10px] mt-[10px] text-[#797979] ml-[20px] hover:underline"><a href="contatcs.html">Контактная информация</a></li>
+					<li class="mb-[10px] mt-[10px] text-[#797979] ml-[20px] hover:underline"><a href="documents.html">Документы регламентирующие деятельность компании</a></li>
+				</ul>
+				<ul class="text-[white] list-image-[url(svg_arrow.svg)] w-[300px]"> Решения
+					<li class="mb-[10px] mt-[10px] text-[#797979] ml-[20px] hover:underline"><a href="automedical.html">АИС для лечебного учреждения</a></li>
+					<li class="mb-[10px] mt-[10px] text-[#797979] ml-[20px] hover:underline"><a href="1cspeed.html">Ускорение работы 1С</a></li>
+					<li class="mb-[10px] mt-[10px] text-[#797979] ml-[20px] hover:underline"><a href="resheniya_dlya_riteyla.html"> Решения для ритейла</a></li>
+					<li class="mb-[10px] mt-[10px] text-[#797979] ml-[20px] hover:underline"><a href="virtualisation.html"> Виртуализация</a></li>
+					<li class="mb-[10px] mt-[10px] text-[#797979] ml-[20px] hover:underline"><a href="mnogoobrabotka.html"> Многопроцессорная обработка данных</a></li>
+				</ul>
+				<ul class="text-[white] list-image-[url(svg_arrow.svg)] w-[300px]"> Поддержка
+					<li class="mb-[10px] mt-[10px] text-[#797979] ml-[20px] hover:underline"><a href="support.html">Техническая поддержка</a></li>
+					<li class="mb-[10px] mt-[10px] text-[#797979] ml-[20px] hover:underline"><a href="outsorcing.html">Аутсорсинг</a></li>
+					<li class="mb-[10px] mt-[10px] text-[#797979] ml-[20px] hover:underline"><a href="support_garantiya.html">Гарантийная поддержка</a></li>
+					<li class="mb-[10px] mt-[10px] text-[#797979] ml-[20px] hover:underline"><a href="packets-standart-and-rashirenie.html">Условия гарантии</a></li>
+					<li class="mb-[10px] mt-[10px] text-[#797979] ml-[20px] hover:underline"><a href="ask_and_question.html">Вопросы и ответы</a></li>
+				</ul>
+				<ol class="text-[white] w-[292px] "> Контактная информация
+				<li class="mb-[10px] mt-[10px] text-[#797979]">Компания АО «КБ Свет Компьютерс»</li>
+					<li class="mb-[10px] text-[#797979]">проезд Березовой рощи  12, подъезд 1 (последний с правой стороны), этаж 3</li>
+					<li class="mb-[10px] text-[#797979]">Москва, 125252</li>
+					<li class="mb-[10px] text-[#797979]">ИНН: 7743543546</li>
+					<li class="mb-[10px] text-[#797979]">Юридический адрес: 125130, г. Москва, Старопетровский проезд, д. 7А, стр. 7, этаж 1
+ОКВЭД ОК 029-2014 (КДЕС Ред. 2) – 46.51</li>
+					<li class="mb-[10px] ">Пн-Пт с 9:30 до 18:00  | <span class="text-[#7dc01d] hover:text-[#527e13] hover:underline">svet@svetcorp.net</span>  | <span class="text-[#7dc01d] hover:text-[#527e13] hover:underline">+7 495 795-02-95</span></li>
+				</ol>
+			</div>
+			<div class="bg-[#222] py-[20px]">
+				<div class="flex justify-center ">
+					<div class="text-[#888] mr-[600px] max-[990px]:mr-[400px] max-[780px]:mr-[200px]">
+				© 1999–2020, АО «КБ СВЕТ Компьютерс»
+					</div>
+					<div class="text-[#888] hover:underline">
+						<a href="https://mpm.st/">
+					Made by .mpmstudio
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

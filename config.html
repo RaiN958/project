@@ -1,0 +1,604 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Title</title>
+		<link rel="stylesheet" href="main.css" />
+		<link rel="stylesheet" href="dist/main.css" />
+		<link rel="stylesheet" href="normalize.css" />
+	</head>
+	<body>
+		<div class="navigate h-[67px] bg-[#222] outline-[black] sticky top-0 z-[100] ">
+			<div class="flex mx-[103px] max-[1200px]:mx-[1px]">
+			<div class="logo mr-[150px] p-[16px]">
+				<a href="index.html">
+				<img src="logo.png" class="min-w-max">
+				</a>
+			</div>
+				<div class="flex text-center items-center text-[.875rem] max-[990px]:hidden">
+					<div class="text-[#fff] overflow-hidden w-[127px] h-[42px] mt-[20px] duration-150 hover:text-[#527e13] hover:border-b-[5px]">
+						<a href="aboutcompany.html">
+					О КОМПАНИИ
+						</a>
+					</div>
+					<div class="text-[#fff] overflow-hidden w-[127px] h-[42px] mt-[20px] duration-150 hover:text-[#527e13] hover:border-b-[5px]">
+						<a href="products.html"> 
+					ПРОДУКТЫ
+						</a>
+					</div>
+					<div class="text-[#fff] overflow-hidden w-[127px] h-[42px] mt-[20px] duration-150 hover:text-[#527e13] hover:border-b-[5px]">
+						<a href="resheniya.html">
+						РЕШЕНИЯ
+						</a>
+					</div>
+					<div class="text-[#fff] overflow-hidden w-[127px] h-[42px] mt-[20px] duration-150 hover:text-[#527e13] hover:border-b-[5px]">
+						<a href="support.html">
+						
+						ПОДДЕРЖКА
+						
+						</a>
+					</div>
+					<div class="text-[#fff] overflow-hidden w-[170px] h-[42px] mt-[20px] duration-150 hover:text-[#527e13] hover:border-b-[5px]">
+						<a href="offers.html">
+						
+						СПЕЦПРЕДЛОЖЕНИЯ
+						
+						</a>
+					</div>
+					<div class="text-[#7dc01d] overflow-hidden w-[127px] h-[42px] mt-[20px] duration-150 hover:text-[#527e13] hover:border-b-[5px]">
+						<a href="tel:">+7 495 795-02-95</a>
+					</div>
+				</div>
+				<div class="menu-toggle absolute right-0 mt-[20px] mr-[10px] hidden max-[990px]:block cursor-pointer transition-discrete " id="menu-toggle">
+							<img src="img/list-svgrepo-com.svg" />
+						</div>
+			</div>
+		</div>
+    <nav class="nav absolute sticky top-[67px] z-[100] fixed z-20 bg-[#222] right-0 text-[white] w-[470px text-lg p-[10px] hidden transition-discrete min-[991px]:!hidden " id="nav">
+      <ul>
+		  <div class="mb-[10px] ml-[10px]"><button class="accordion">О компании</button>
+			  <div class="hidden">
+				  <ul class="ml-[30px] text-sm">
+			  <li class="mb-[10px]" ><a href="aboutcompany.html" class="mb-[10px]">
+			О НАС
+				</a>
+			  <li class="mb-[10px]"><a href="news.html" >
+			НОВОСТИ
+				  </a></li>
+					<li class="mb-[10px]"><a href="partners.html" >
+			ПАРТНЕРЫ
+				  </a></li>
+					<li class="mb-[10px]"><a href="primervnedr.html" >
+			ПРИМЕРЫ ВНЕДРЕНИЙ
+				  </a></li>
+					<li class="mb-[10px]"><a href="licenses.html" >
+			СЕРТИФИКАТЫ И ЛИЦЕНЗИИ
+				  </a></li>
+					<li class="mb-[10px]"><a href="jobopenings.html" >
+			ВАКАНСИИ
+				  </a></li>
+					<li class="mb-[10px]"><a href="contatcs.html" >
+			КОНТАКТЫ
+				  </a></li>
+					  </ul>
+			  </div>
+		  </div>
+		  <li class="mb-[10px] ml-[10px]"><a href="products.html">Продукты</a></li>
+		  <li class="mb-[10px] ml-[10px]"><a href="resheniya.html">Решения</a></li>
+		  <div class="mb-[10px] ml-[10px]"><button class="accordion">Поддержка</button>
+			  <div class="hidden text-sm ml-[30px]">
+			  <li class="mb-[10px]" ><a href="support.html" class="mb-[10px]">
+			Техническая поддержка
+				</a>
+			  <li class="mb-[10px]"><a href="outsorcing.html" >
+			Аутсорсинг
+				  </a></li>
+					<li class="mb-[10px]"><a href="support_garantiya.html" >
+			Гарантийная подержка
+				  </a></li>
+					<li class="mb-[10px]"><a href="packets-standart-and-rashirenie.html" >
+			Пакеты стандартной и расширенной гарантии
+				  </a></li>
+					<li class="mb-[10px]"><a href="ask_and_question.html" >
+			Вопросы и ответы
+				  </a></li>
+			  </div>
+		  </div>
+		  <li class="mb-[10px] ml-[10px]"><a href="offers.html">Спецпредложения</a></li>
+		<li class="mb-[10px] ml-[10px] text-[#7dc01d] duration-150 hover:text-[#527e13] ">+7 495 795-02-95</li>
+      </ul>
+    </nav>
+		<script>
+  const toggleBtn = document.getElementById('menu-toggle');
+  const navMenu = document.getElementById('nav');
+
+  toggleBtn.addEventListener('click', () => {
+    if (navMenu.style.display === 'block') {
+      navMenu.style.display = 'none';
+    } else {
+      navMenu.style.display = 'block';
+    }
+  });
+</script>
+		<script src="accordeon.js"></script>
+		<div class="justify-items-center">
+			<h1 class="">Расчет конфигурации</h1>
+			<div>
+				<img src="lines.svg" class="justify-items-center w-[100px] mb-[25px]" />
+			</div>
+		</div>
+		<div>
+			<div class="w-[1200px] max-[1200px]:w-[930px] max-[990px]:w-[690px] max-[760px]:w-[510px] m-auto">
+				<div class="row justify-content-center">
+					<div class="row">
+						<div class="mb-[30px] text-center">
+							<p >
+								Если вам необходима техническая консультация при заказе вашего сервера — обратитесь к
+								этой <a class="text-[#7dc01d] hover:text-[#527e13] hover:underline" href="config_choises.html">форме</a>
+							</p>
+						</div>
+						<div class="">
+							<div class="flex flex-wrap">
+							<h3 class="topSpace"></h3>
+							<form
+								name="SIMPLE_FORM_3"
+								action="/support/configuration/"
+								method="POST"
+								class="form-horizontal"
+								enctype="multipart/form-data">
+								<input
+									type="hidden"
+									name="sessid"
+									id="sessid"
+									value="8d62d640398daf428d07cd17e60c17d2" /><input
+									type="hidden"
+									name="WEB_FORM_ID"
+									value="3" />
+								<div class="form-row flex flex-wrap justify-center">
+									<div class=" w-[565px]">
+										<div class="form-group w-[565px] h-[62px]">
+											<label>Тип корзины </label>
+											<select
+												class="form-control w-[539px] h-[34px] border rounded-md px-[10px] " 
+												name="form_dropdown_SIMPLE_QUESTION_822_hKVp2"
+												id="form_dropdown_SIMPLE_QUESTION_822_hKVp2">
+												<option value="228">2.5 (SFF)</option>
+												<option value="229">3.5 (LFF)</option>
+												<option value="261">Требуется помощь в выборе</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-6 w-[565px]">
+										<div class="form-group w-[565px] h-[62px]">
+											<label>Тип корпуса </label>
+											<select
+												class="form-control w-[539px] h-[34px] border rounded-md px-[10px]"
+												name="form_dropdown_SIMPLE_QUESTION_822"
+												id="form_dropdown_SIMPLE_QUESTION_822">
+												<option value="18">Башня (Tower)</option>
+												<option value="19">Башня (Tower) с конвертацией в стойку</option>
+												<option value="20">В стойку (RackMount)</option>
+												<option value="259">Требуется помощь в выборе</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-6 ">
+										<div class="form-group w-[565px] h-[62px]">
+											<label>Высота корпуса </label>
+											<select
+												class="form-control w-[539px] h-[34px] border rounded-md px-[10px]"
+												name="form_dropdown_SIMPLE_QUESTION_822_HD1z6"
+												id="form_dropdown_SIMPLE_QUESTION_822_HD1z6">
+												<option value="74">1U</option>
+												<option value="75">2U</option>
+												<option value="76">3U</option>
+												<option value="77">4U</option>
+												<option value="260">Требуется помощь в выборе</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-6 w-[565px] h-[69px]">
+										<div class="form-group w-[565px] h-[62px]">
+											<label>Поддержка дисков (кол-во) </label>
+											<select
+												class="form-control w-[539px] h-[34px] border rounded-md px-[10px]"
+												name="form_dropdown_SIMPLE_QUESTION_822_HD1z6_iQOXu_596VU"
+												id="form_dropdown_SIMPLE_QUESTION_822_HD1z6_iQOXu_596VU">
+												<option value="82">4</option>
+												<option value="83">8</option>
+												<option value="84">12</option>
+												<option value="85">24</option>
+												<option value="86">32</option>
+												<option value="262">Требуется помощь в выборе</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group w-[565px] h-[62px]">
+											<label>Необходимость горячей замены дисков </label>
+											<select
+												class="form-control w-[539px] h-[34px] border rounded-md px-[10px]"
+												name="form_dropdown_SIMPLE_QUESTION_822_HD1z6_iQOXu_596VU_7ao7O"
+												id="form_dropdown_SIMPLE_QUESTION_822_HD1z6_iQOXu_596VU_7ao7O">
+												<option value="87">Поддержка hot-swap</option>
+												<option value="88">Отсутствует</option>
+												<option value="263">Требуется помощь в выборе</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group w-[565px] h-[62px]">
+											<label>Процессор </label>
+											<select
+												class="form-control w-[539px] h-[34px] border rounded-md px-[10px]"
+												name="form_dropdown_SIMPLE_QUESTION_287"
+												id="form_dropdown_SIMPLE_QUESTION_287">
+												<option value="24">
+													3rd Generation Intel Xeon Scalable Processors
+												</option>
+												<option value="25">
+													2rd Generation Intel Xeon Scalable Processors
+												</option>
+												<option value="26">Intel Xeon Scalable Processors</option>
+												<option value="27">Intel Xeon&nbsp; E5/E3</option>
+												<option value="278">Требуется помощь в выборе</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group w-[565px] h-[62px]">
+											<label>Оперативная память (Объем одного модуля) </label>
+											<select
+												class="form-control w-[539px] h-[34px] border rounded-md px-[10px]"
+												name="form_dropdown_SIMPLE_QUESTION_822_HD1z6_iQOXu_596VU_7ao7O_IE8Cu"
+												id="form_dropdown_SIMPLE_QUESTION_822_HD1z6_iQOXu_596VU_7ao7O_IE8Cu">
+												<option value="112">4 GB DDR4</option>
+												<option value="113">8 GB DDR4</option>
+												<option value="116">16 GB DDR4</option>
+												<option value="117">32 GB DDR4</option>
+												<option value="118">64 GB DDR4</option>
+												<option value="265">Требуется помощь в выборе</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group w-[565px] h-[62px]">
+											<label>Количество </label>
+											<input type="text" class="form-control w-[539px] h-[34px] border rounded-md px-[10px]" name="form_text_31" value="" />
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group w-[565px] h-[62px]">
+											<label>Дисковая подсистема HDD1 (Тип и объем HDD) </label>
+											<select
+												class="form-control w-[539px] h-[34px] border rounded-md px-[10px]"
+												name="form_dropdown_SIMPLE_QUESTION_822_HD1z6_iQOXu_596VU_7ao7O__wOZee"
+												id="form_dropdown_SIMPLE_QUESTION_822_HD1z6_iQOXu_596VU_7ao7O__wOZee">
+												<option value="114">Без жесткого диска</option>
+												<option value="145">___</option>
+												<option value="119">300GB SAS 6Gbps 10K</option>
+												<option value="120">300GB SAS 6Gbps 15K</option>
+												<option value="121">300GB SAS 12Gbps 15K</option>
+												<option value="122">600GB SAS 6Gbps 10k</option>
+												<option value="123">600GB SAS 6Gbps 15k</option>
+												<option value="124">600GB SAS 6Gbps 15k</option>
+												<option value="125">900GB SAS 6Gbps 15k</option>
+												<option value="126">1.8TB SAS 6Gbps 10k</option>
+												<option value="127">2.4TB SAS 6Gbps 10k</option>
+												<option value="128">1TB SAS 6Gbps 7.2k</option>
+												<option value="129">2TB SAS 6Gbps 7.2k</option>
+												<option value="130">3TB SAS 6Gbps 7.2k</option>
+												<option value="131">4TB SAS 6Gbps 7.2k</option>
+												<option value="132">6TB SAS 6Gbps 7.2k</option>
+												<option value="133">8TB SAS 6Gbps 7.2k</option>
+												<option value="134">10TB SAS 6Gbps 7.2k</option>
+												<option value="135">___</option>
+												<option value="136">500GB SATA 6Gbps 7.2k</option>
+												<option value="137">1TB SATA 6Gbps 7.2k</option>
+												<option value="138">2TB SATA 6Gbps 7.2k</option>
+												<option value="139">3TB SATA 6Gbps 7.2k</option>
+												<option value="140">4TB SATA 6Gbps 7.2k</option>
+												<option value="141">6TB SATA 6Gbps 7.2k</option>
+												<option value="142">8TB SATA 6Gbps 7.2k</option>
+												<option value="143">10TB SATA 6Gbps 7.2k</option>
+												<option value="274">___</option>
+												<option value="266">Требуется помощь в выборе</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group w-[565px] h-[62px]">
+											<label>Количество </label>
+											<input type="text" class="form-control w-[539px] h-[34px] border rounded-md px-[10px]" name="form_text_144" value="" />
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group w-[565px] h-[62px]">
+											<label>Дисковая подсистема HDD2 (Тип и объем HDD) </label>
+											<select
+												class="form-control w-[539px] h-[34px] border rounded-md px-[10px]"
+												name="form_dropdown_SIMPLE_QUESTION_822_HD1z6_iQOXu_596VU_7ao7O__0f0RK"
+												id="form_dropdown_SIMPLE_QUESTION_822_HD1z6_iQOXu_596VU_7ao7O__0f0RK">
+												<option value="145">Без жесткого диска</option>
+												<option value="146">___</option>
+												<option value="147">300GB SAS 6Gbps 10K</option>
+												<option value="148">300GB SAS 6Gbps 15K</option>
+												<option value="149">300GB SAS 12Gbps 15K</option>
+												<option value="150">600GB SAS 6Gbps 10k</option>
+												<option value="151">600GB SAS 6Gbps 15k</option>
+												<option value="152">600GB SAS 6Gbps 15k</option>
+												<option value="153">900GB SAS 6Gbps 15k</option>
+												<option value="154">1.8TB SAS 6Gbps 10k</option>
+												<option value="155">2.4TB SAS 6Gbps 10k</option>
+												<option value="156">1TB SAS 6Gbps 7.2k</option>
+												<option value="157">2TB SAS 6Gbps 7.2k</option>
+												<option value="158">3TB SAS 6Gbps 7.2k</option>
+												<option value="159">4TB SAS 6Gbps 7.2k</option>
+												<option value="160">6TB SAS 6Gbps 7.2k</option>
+												<option value="161">8TB SAS 6Gbps 7.2k</option>
+												<option value="162">10TB SAS 6Gbps 7.2k</option>
+												<option value="163">___</option>
+												<option value="164">500GB SATA 6Gbps 7.2k</option>
+												<option value="165">1TB SATA 6Gbps 7.2k</option>
+												<option value="166">2TB SATA 6Gbps 7.2k</option>
+												<option value="167">3TB SATA 6Gbps 7.2k</option>
+												<option value="168">4TB SATA 6Gbps 7.2k</option>
+												<option value="169">6TB SATA 6Gbps 7.2k</option>
+												<option value="170">8TB SATA 6Gbps 7.2k</option>
+												<option value="171">10TB SATA 6Gbps 7.2k</option>
+												<option value="275">___</option>
+												<option value="267">Требуется помощь в выборе</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group w-[565px] h-[62px]">
+											<label>Количество </label>
+											<input type="text" class="form-control w-[539px] h-[34px] border rounded-md px-[10px]" name="form_text_172" value="" />
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group w-[565px] h-[62px]">
+											<label>Дисковая подсистема SSD (Тип и объем SSD) </label>
+											<select
+												class="form-control w-[539px] h-[34px] border rounded-md px-[10px]"
+												name="form_dropdown_SIMPLE_QUESTION_822_HD1z6_iQOXu_596VU_7ao7O__NAJtp"
+												id="form_dropdown_SIMPLE_QUESTION_822_HD1z6_iQOXu_596VU_7ao7O__NAJtp">
+												<option value="198">100GB SSD SATA 6Gbps</option>
+												<option value="200">120GB SSD SATA 6Gbps</option>
+												<option value="201">150GB SSD SATA 6Gbps</option>
+												<option value="202">200GB SSD SATA 6Gbps</option>
+												<option value="203">400GB SSD SATA 6Gbps</option>
+												<option value="204">800GB SSD SATA 6Gbps</option>
+												<option value="205">960GB SSD SATA 6Gbps</option>
+												<option value="206">1.2TB SSD SATA 6Gbps</option>
+												<option value="207">1.6TB SSD SATA 6Gbps</option>
+												<option value="208">1.92TB SSD SATA 6Gbps</option>
+												<option value="209">___</option>
+												<option value="210">200GB SSD SAS 6Gbps</option>
+												<option value="211">480GB SSD SAS 6Gbps</option>
+												<option value="212">800GB SSD SAS 6Gbps</option>
+												<option value="213">960GB SSD SAS 6Gbps</option>
+												<option value="214">1.6TB SSD SAS 6Gbps</option>
+												<option value="215">1.92TB SSD SAS 6Gbps</option>
+												<option value="216">3.84TB SSD SAS 6Gbps</option>
+												<option value="217">___</option>
+												<option value="218">400GB SSD PCIE</option>
+												<option value="219">800GB SSD PCIE</option>
+												<option value="220">1TB SSD PCIE</option>
+												<option value="221">1.2TB SSD PCIE</option>
+												<option value="222">1.6TB SSD PCIE</option>
+												<option value="223">2TB SSD PCIE</option>
+												<option value="224">3.2TB SSD PCIE</option>
+												<option value="225">4TB SSD PCIE</option>
+												<option value="226">6.4TB SSD PCIE</option>
+												<option value="276">___</option>
+												<option value="268">Требуется помощь в выборе</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group w-[565px] h-[62px]">
+											<label>Количество </label>
+											<input type="text" class="form-control w-[539px] h-[34px] border rounded-md px-[10px]" name="form_text_227" value="" />
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group w-[565px] h-[62px]">
+											<label>Конфигурации RAID и тип контроллера </label>
+											<select
+												class="form-control w-[539px] h-[34px] border rounded-md px-[10px]"
+												name="form_dropdown_SIMPLE_QUESTION_822_HD1z6_iQOXu"
+												id="form_dropdown_SIMPLE_QUESTION_822_HD1z6_iQOXu">
+												<option value="78">нет</option>
+												<option value="79">Raid 0, 1, 10 / программный</option>
+												<option value="231">Raid 0, 1, 10 / аппаратный</option>
+												<option value="232">Raid 0, 1, 10, 5, 50 / аппаратный</option>
+												<option value="233">Raid 0, 1, 10, 5, 50, 6, 60 / аппаратный</option>
+												<option value="269">Требуется помощь в выборе</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group w-[565px] h-[62px]">
+											<label>Сетевые интерфейсы (Сетевой адаптер) </label>
+											<select
+												class="form-control w-[539px] h-[34px] border rounded-md px-[10px]"
+												name="form_dropdown_SIMPLE_QUESTION_822_HD1z6_iQOXu_QqKmO"
+												id="form_dropdown_SIMPLE_QUESTION_822_HD1z6_iQOXu_QqKmO">
+												<option value="234">Ethernet</option>
+												<option value="235">Fabric-IB</option>
+												<option value="236">InfiniBand</option>
+												<option value="237">Omni-Path</option>
+												<option value="238">Storage-FC</option>
+												<option value="270">Требуется помощь в выборе</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group w-[565px] h-[62px]">
+											<label>Количество портов </label>
+											<input type="text" class="form-control w-[539px] h-[34px] border rounded-md px-[10px]" name="form_text_239" value="" />
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group w-[565px] h-[62px]">
+											<label>Количество адаптеров </label>
+											<input type="text" class="form-control w-[539px] h-[34px] border rounded-md px-[10px]" name="form_text_240" value="" />
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group w-[565px] h-[62px]">
+											<label>Блок питание (Мощность блока питания) </label>
+											<select
+												class="form-control w-[539px] h-[34px] border rounded-md px-[10px]"
+												name="form_dropdown_SIMPLE_QUESTION_822_HD1z6_iQOXu_QqKmO_ohnKQ"
+												id="form_dropdown_SIMPLE_QUESTION_822_HD1z6_iQOXu_QqKmO_ohnKQ">
+												<option value="241">500W</option>
+												<option value="242">750W</option>
+												<option value="243">800W</option>
+												<option value="244">1100W</option>
+												<option value="245">1400W</option>
+												<option value="246">1980W</option>
+												<option value="271">Требуется помощь в выборе</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group w-[565px] h-[62px]">
+											<label>Количество блоков питания </label>
+											<select
+												class="form-control w-[539px] h-[34px] border rounded-md px-[10px]"
+												name="form_dropdown_SIMPLE_QUESTION_822_HD1z6_iQOXu_QqKmO_ohnKQ_oe1wT"
+												id="form_dropdown_SIMPLE_QUESTION_822_HD1z6_iQOXu_QqKmO_ohnKQ_oe1wT">
+												<option value="247">1</option>
+												<option value="248">2</option>
+												<option value="272">Требуется помощь в выборе</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group w-[565px] h-[62px]">
+											<label>Опции (вписать) </label>
+											<input type="text" class="form-control w-[539px] h-[34px] border rounded-md px-[10px]" name="form_text_255" value="" />
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group w-[565px] h-[62px]">
+											<label>Предустановка ПО </label>
+											<input type="text" class="form-control w-[539px] h-[34px] border rounded-md px-[10px]" name="form_text_256" value="" />
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group w-[565px] h-[62px]">
+											<label>Указать ценовое ограничение (вписать) </label>
+											<input type="text" class="form-control w-[539px] h-[34px] border rounded-md px-[10px]" name="form_text_257" value="" />
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group w-[565px] mb-[20px]">
+											<label>Комментарии </label>
+											<textarea
+												name="form_textarea_258"
+												cols="40"
+												rows="5"
+												class="form-control w-[539px] h-[165px] border rounded-md px-[10px]"></textarea>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group w-[565px] h-[62px]">
+											<label>Представьтесь, пожалуйста <span class="required">*</span> </label>
+											<input type="text" class="form-control w-[539px] h-[34px] border rounded-md px-[10px]" name="form_text_14" value="" />
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group w-[565px] h-[62px]">
+											<label>Ваша электронная почта <span class="required">*</span> </label>
+											<input
+												type="text"
+												class="form-control w-[539px] h-[34px] border rounded-md px-[10px]"
+												name="form_email_15"
+												value=""
+												size="0" />
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group w-[565px] h-[62px]">
+											<label>Телефон для связи <span class="required">*</span> </label>
+											<input type="text" class="form-control w-[539px] h-[34px] border rounded-md px-[10px]" name="form_text_16" value="" />
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group w-[565px] h-[62px]">
+											<label>Ваша компания <span class="required">*</span> </label>
+											<input type="text" class="form-control w-[539px] h-[34px] border rounded-md px-[10px]" name="form_text_17" value="" />
+										</div>
+									</div>
+								</div>
+								<div class="col-md-12 mb-[20px] w-[1110px] max-[1200px]:w-[930px] max-[990px]:w-[690px] max-[760px]:w-[510px] m-auto">
+									<p class="mb-[30px] text-[#7dc01d] hover:text-[#527e13] hover:underline ">
+										<a href="personalniedannie.html" target="_blank"
+											>Нажимая на кнопку «Оформить заказ», я принимаю условия пользовательского
+											соглашения и даю согласие на обработку моих персональных данных.</a>
+									</p>
+									<input
+										name="web_form_submit"
+										value="Отправить"
+										type="submit"
+										class="btn btn-success pull-right justify-items-center topSpace bg-[#28a745] hover:bg-[#527e13] py-[6px] px-[12px] rounded-md text-[white] " />
+								</div>
+							</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class=" bg-[#282828] flex flex-wrap justify-center gap-[10px] p-[10px] m-auto">
+				<ul class="text-[white] list-image-[url(svg_arrow.svg)] w-[300px]"> О компании 
+					<li class="mb-[10px] mt-[10px] text-[#797979] ml-[20px] hover:underline"><a href="aboutcompany.html">О нас</a></li>
+					<li class="mb-[10px] mt-[10px] text-[#797979] ml-[20px] hover:underline"><a>Мероприятия</a></li>
+					<li class="mb-[10px] mt-[10px] text-[#797979] ml-[20px] hover:underline"><a href="partners.html">Партнеры</a></li>
+					<li class="mb-[10px] mt-[10px] text-[#797979] ml-[20px] hover:underline"><a href="primervnedr.html">Примеры внедрений</a></li>
+					<li class="mb-[10px] mt-[10px] text-[#797979] ml-[20px] hover:underline"><a href="jobopenings.html">Вакансии</a></li>
+					<li class="mb-[10px] mt-[10px] text-[#797979] ml-[20px] hover:underline"><a href="contatcs.html">Контактная информация</a></li>
+					<li class="mb-[10px] mt-[10px] text-[#797979] ml-[20px] hover:underline"><a href="documents.html">Документы регламентирующие деятельность компании</a></li>
+				</ul>
+				<ul class="text-[white] list-image-[url(svg_arrow.svg)] w-[300px]"> Решения
+					<li class="mb-[10px] mt-[10px] text-[#797979] ml-[20px] hover:underline"><a href="automedical.html">АИС для лечебного учреждения</a></li>
+					<li class="mb-[10px] mt-[10px] text-[#797979] ml-[20px] hover:underline"><a href="1cspeed.html">Ускорение работы 1С</a></li>
+					<li class="mb-[10px] mt-[10px] text-[#797979] ml-[20px] hover:underline"><a href="resheniya_dlya_riteyla.html"> Решения для ритейла</a></li>
+					<li class="mb-[10px] mt-[10px] text-[#797979] ml-[20px] hover:underline"><a href="virtualisation.html"> Виртуализация</a></li>
+					<li class="mb-[10px] mt-[10px] text-[#797979] ml-[20px] hover:underline"><a href="mnogoobrabotka.html"> Многопроцессорная обработка данных</a></li>
+				</ul>
+				<ul class="text-[white] list-image-[url(svg_arrow.svg)] w-[300px]"> Поддержка
+					<li class="mb-[10px] mt-[10px] text-[#797979] ml-[20px] hover:underline"><a href="support.html">Техническая поддержка</a></li>
+					<li class="mb-[10px] mt-[10px] text-[#797979] ml-[20px] hover:underline"><a href="outsorcing.html">Аутсорсинг</a></li>
+					<li class="mb-[10px] mt-[10px] text-[#797979] ml-[20px] hover:underline"><a href="support_garantiya.html">Гарантийная поддержка</a></li>
+					<li class="mb-[10px] mt-[10px] text-[#797979] ml-[20px] hover:underline"><a href="packets-standart-and-rashirenie.html">Условия гарантии</a></li>
+					<li class="mb-[10px] mt-[10px] text-[#797979] ml-[20px] hover:underline"><a href="ask_and_question.html">Вопросы и ответы</a></li>
+				</ul>
+				<ol class="text-[white] w-[292px] "> Контактная информация
+				<li class="mb-[10px] mt-[10px] text-[#797979]">Компания АО «КБ Свет Компьютерс»</li>
+					<li class="mb-[10px] text-[#797979]">проезд Березовой рощи  12, подъезд 1 (последний с правой стороны), этаж 3</li>
+					<li class="mb-[10px] text-[#797979]">Москва, 125252</li>
+					<li class="mb-[10px] text-[#797979]">ИНН: 7743543546</li>
+					<li class="mb-[10px] text-[#797979]">Юридический адрес: 125130, г. Москва, Старопетровский проезд, д. 7А, стр. 7, этаж 1
+ОКВЭД ОК 029-2014 (КДЕС Ред. 2) – 46.51</li>
+					<li class="mb-[10px] ">Пн-Пт с 9:30 до 18:00  | <span class="text-[#7dc01d] hover:text-[#527e13] hover:underline">svet@svetcorp.net</span>  | <span class="text-[#7dc01d] hover:text-[#527e13] hover:underline">+7 495 795-02-95</span></li>
+				</ol>
+			</div>
+			<div class="bg-[#222] py-[20px]">
+				<div class="flex justify-center ">
+					<div class="text-[#888] mr-[600px] max-[990px]:mr-[400px] max-[780px]:mr-[200px]">
+				© 1999–2020, АО «КБ СВЕТ Компьютерс»
+					</div>
+					<div class="text-[#888] hover:underline">
+						<a href="https://mpm.st/">
+					Made by .mpmstudio
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

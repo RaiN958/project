@@ -1,0 +1,692 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Title</title>
+		<link rel="stylesheet" href="main.css" />
+		<link rel="stylesheet" href="dist/main.css" />
+		<link rel="stylesheet" href="normalize.css" />
+	</head>
+	<body>
+		<div class="navigate h-[67px] bg-[#222] outline-[black] sticky top-0 z-[100] ">
+			<div class="flex mx-[103px] max-[1200px]:mx-[1px]">
+			<div class="logo mr-[150px] p-[16px]">
+				<a href="index.html">
+				<img src="logo.png" class="min-w-max">
+				</a>
+			</div>
+				<div class="flex text-center items-center text-[.875rem] max-[990px]:hidden">
+					<div class="text-[#fff] overflow-hidden w-[127px] h-[42px] mt-[20px] duration-150 hover:text-[#527e13] hover:border-b-[5px]">
+						<a href="aboutcompany.html">
+					О КОМПАНИИ
+						</a>
+					</div>
+					<div class="text-[#fff] overflow-hidden w-[127px] h-[42px] mt-[20px] duration-150 hover:text-[#527e13] hover:border-b-[5px]">
+						<a href="products.html"> 
+					ПРОДУКТЫ
+						</a>
+					</div>
+					<div class="text-[#fff] overflow-hidden w-[127px] h-[42px] mt-[20px] duration-150 hover:text-[#527e13] hover:border-b-[5px]">
+						<a href="resheniya.html">
+						РЕШЕНИЯ
+						</a>
+					</div>
+					<div class="text-[#fff] overflow-hidden w-[127px] h-[42px] mt-[20px] duration-150 hover:text-[#527e13] hover:border-b-[5px]">
+						<a href="support.html">
+						
+						ПОДДЕРЖКА
+						
+						</a>
+					</div>
+					<div class="text-[#fff] overflow-hidden w-[170px] h-[42px] mt-[20px] duration-150 hover:text-[#527e13] hover:border-b-[5px]">
+						<a href="offers.html">
+						
+						СПЕЦПРЕДЛОЖЕНИЯ
+						
+						</a>
+					</div>
+					<div class="text-[#7dc01d] overflow-hidden w-[127px] h-[42px] mt-[20px] duration-150 hover:text-[#527e13] hover:border-b-[5px]">
+						<a href="tel:">+7 495 795-02-95</a>
+					</div>
+				</div>
+				<div class="menu-toggle absolute right-0 mt-[20px] mr-[10px] hidden max-[990px]:block cursor-pointer transition-discrete " id="menu-toggle">
+							<img src="img/list-svgrepo-com.svg" />
+						</div>
+			</div>
+		</div>
+    <nav class="nav absolute sticky top-[67px] z-[100] fixed z-20 bg-[#222] right-0 text-[white] w-[470px text-lg p-[10px] hidden transition-discrete min-[991px]:!hidden " id="nav">
+      <ul>
+		  <div class="mb-[10px] ml-[10px]"><button class="accordion">О компании</button>
+			  <div class="hidden">
+				  <ul class="ml-[30px] text-sm">
+			  <li class="mb-[10px]" ><a href="aboutcompany.html" class="mb-[10px]">
+			О НАС
+				</a>
+			  <li class="mb-[10px]"><a href="news.html" >
+			НОВОСТИ
+				  </a></li>
+					<li class="mb-[10px]"><a href="partners.html" >
+			ПАРТНЕРЫ
+				  </a></li>
+					<li class="mb-[10px]"><a href="primervnedr.html" >
+			ПРИМЕРЫ ВНЕДРЕНИЙ
+				  </a></li>
+					<li class="mb-[10px]"><a href="licenses.html" >
+			СЕРТИФИКАТЫ И ЛИЦЕНЗИИ
+				  </a></li>
+					<li class="mb-[10px]"><a href="jobopenings.html" >
+			ВАКАНСИИ
+				  </a></li>
+					<li class="mb-[10px]"><a href="contatcs.html" >
+			КОНТАКТЫ
+				  </a></li>
+					  </ul>
+			  </div>
+		  </div>
+		  <li class="mb-[10px] ml-[10px]"><a href="products.html">Продукты</a></li>
+		  <li class="mb-[10px] ml-[10px]"><a href="resheniya.html">Решения</a></li>
+		  <div class="mb-[10px] ml-[10px]"><button class="accordion">Поддержка</button>
+			  <div class="hidden text-sm ml-[30px]">
+			  <li class="mb-[10px]" ><a href="support.html" class="mb-[10px]">
+			Техническая поддержка
+				</a>
+			  <li class="mb-[10px]"><a href="outsorcing.html" >
+			Аутсорсинг
+				  </a></li>
+					<li class="mb-[10px]"><a href="support_garantiya.html" >
+			Гарантийная подержка
+				  </a></li>
+					<li class="mb-[10px]"><a href="packets-standart-and-rashirenie.html" >
+			Пакеты стандартной и расширенной гарантии
+				  </a></li>
+					<li class="mb-[10px]"><a href="ask_and_question.html" >
+			Вопросы и ответы
+				  </a></li>
+			  </div>
+		  </div>
+		  <li class="mb-[10px] ml-[10px]"><a href="offers.html">Спецпредложения</a></li>
+		<li class="mb-[10px] ml-[10px] text-[#7dc01d] duration-150 hover:text-[#527e13] ">+7 495 795-02-95</li>
+      </ul>
+    </nav>
+		<script>
+  const toggleBtn = document.getElementById('menu-toggle');
+  const navMenu = document.getElementById('nav');
+
+  toggleBtn.addEventListener('click', () => {
+    if (navMenu.style.display === 'block') {
+      navMenu.style.display = 'none';
+    } else {
+      navMenu.style.display = 'block';
+    }
+  });
+</script>
+		<script src="accordeon.js"></script>
+		<div class="bg-[#7dc01d] h-[50px] sticky top-[67px] z-[100] max-[990px]:hidden">
+			<div class="text-[white] ml-[150px] max-[1150px]:ml-[15px] text-[13px] pt-[14px] text-sm gap-[15px] flex flex-nowrap">
+				<a class="font-bold" href="support.html">
+			ТЕХНИЧЕСКАЯ ПОДДЕРЖКА
+				</a>
+				<a href="outsorcing.html">
+			АУТСОРСИНГ
+				</a>
+				<a href="support_garantiya.html">
+			ГАРАНТИЙНАЯ ПОДДЕРКА
+				</a>
+				<a class="font-bold" href="packets-standart-and-rashirenie.html">
+			ПАКЕТЫ СТАНДАРТНОЙ И РАСШИРЕННОЙ ГАРАНТИИ
+				</a>
+				<a href="ask_and_question.html">
+			ВОПРОСЫ И ОТВЕТЫ
+				</a>
+			</div>
+		</div>
+		<div class="justify-items-center">
+			<h1 class="">Пакеты стандартной и расширенной гарантии</h1>
+			<div>
+				<img src="lines.svg" class="justify-items-center w-[100px] mb-[25px]" />
+			</div>
+		</div>
+		<div>
+			<div class="w-[1200px] max-[1200px]:w-[930px] max-[990px]:w-[690px] max-[760px]:w-[510px] m-auto">
+				<div class="container">
+	<div class="row justify-content-center">
+		<div class="col-md-12">
+			<h1 class="text-center">Условия стандартной гарантии на&nbsp;оборудование IntellectDigital</h1>
+		</div>
+	</div>
+	<div class="">
+		<div class="">
+			<h1><strong>Оборудование типа 1***. Серверы и&nbsp;СХД Low End сегмента</strong></h1>
+			<ul class="list-image-[url(check-check-svgrepo-green-com.svg)] ml-[20px] mb-[20px]">
+				<li>Срок гарантии&nbsp;— 3&nbsp;года.</li>
+				<li>Территория обслуживания&nbsp;— сервисный центр</li>
+				<li>Время реакции на&nbsp;обращение*&nbsp;— 4&nbsp;часа</li>
+				<li>Доставка оборудования в&nbsp;СЦ и&nbsp;обратно за&nbsp;счет покупателя.</li>
+				<li>Возможность замены комплектующих самостоятельно**</li>
+				<li>Отправка комплектующих в&nbsp;СЦ и&nbsp;обратно, относящихся к&nbsp;подлежащим самостоятельной замене комплектующим**, производится за&nbsp;счет покупателя при условии, что покупатель не&nbsp;может доставить комплектующие самостоятельно.</li>
+				<li>Если вы&nbsp;хотите, чтобы комплектующие, подлежащие самостоятельной замене, были заменены специалистом&nbsp;СЦ, вы&nbsp;можете заказать эту услугу. За&nbsp;работы по&nbsp;замене вам будет выставлен счет.</li>
+				<li>Для замены комплектующих, подлежащих замене строго специалистами&nbsp;СЦ**, требуется доставка оборудования в&nbsp;СЦ (силами покупателя) или возможен выезд специалиста за&nbsp;дополнительную плату.</li>
+				<li>Количество телефонных консультаций неограниченно.</li>
+				<li>Срок диагностики неисправных комплектующих не&nbsp;более 10&nbsp;рабочих дней</li>
+				<li>Срок восстановления до&nbsp;<nobr>5-ти</nobr> рабочих дней при наличии&nbsp;ЗЧ, до&nbsp;<nobr>21-го</nobr> рабочего дня&nbsp;— при отсутствии ЗЧ.</li>
+			</ul>
+		</div>
+	</div>
+	<div class="">
+		<div class="">
+			<h1><strong>Оборудование типа 2***. Сервера и&nbsp;СХД Midrange сегмента, лезвие для модульного сервера, графическая станция</strong></h1>
+			<ul class="list-image-[url(check-check-svgrepo-green-com.svg)] ml-[20px] mb-[20px]">
+				<li>Срок гарантии&nbsp;— 3&nbsp;года</li>
+			</ul>
+		</div>
+	</div>
+	<div class="">
+		<table class=" mb-[20px]">
+			<tbody>
+				<tr>
+					<td class="p-[20px] border">
+						<nobr>1-й</nobr> год гарантии
+					</td>
+					<td class="p-[20px] border">2-й&nbsp;и&nbsp;3-й&nbsp;год гарантии</td>
+				</tr>
+				<tr>
+					<td class="p-[20px] border">Территория обслуживания&nbsp;— территория заказчика****</td>
+					<td class="p-[20px] border">Территория обслуживания&nbsp;— территория сервисного центра</td>
+				</tr>
+				<tr>
+					<td class="p-[20px] border">Время реакции на&nbsp;обращение*&nbsp;— 4&nbsp;часа</td>
+					<td class="p-[20px] border">Время реакции на&nbsp;обращение*&nbsp;— 4&nbsp;часа</td>
+				</tr>
+				<tr>
+					<td class="p-[20px] border">Выезд осуществляется не&nbsp;позднее, чем через 2&nbsp;рабочих дня со&nbsp;дня принятия решения о&nbsp;необходимости решения проблемы на&nbsp;территории заказчика. Отправка комплектующих или оборудования, подлежащих самостоятельной замене**, производится
+						за&nbsp;счет производителя. Доставку комплектующих или оборудования, требующего ремонта в&nbsp;СЦ**, обеспечивает производитель.</td>
+					<td class="p-[20px] border">Доставка оборудования в&nbsp;СЦ и&nbsp;обратно за&nbsp;счет покупателя. Отправка комплектующих в&nbsp;СЦ и&nbsp;обратно, относящихся к&nbsp;подлежащим самостоятельной замене комплектующим**, производится за&nbsp;счет покупателя при условии, что покупатель
+						не&nbsp;может доставить комплектующие самостоятельно</td>
+				</tr>
+				<tr>
+					<td colspan="2" class="p-[20px] border">Если вы&nbsp;хотите, чтобы комплектующие, подлежащие самостоятельной замене, были заменены специалистом&nbsp;СЦ, вы&nbsp;можете заказать эту услугу. За&nbsp;работы по&nbsp;замене вам будет выставлен счет.</td>
+				</tr>
+				<tr>
+					<td class="p-[20px] border">Возможность замены комплектующих самостоятельно**</td>
+					<td class="p-[20px] border">Возможность замены комплектующих самостоятельно**</td>
+				</tr>
+				<tr>
+					<td class="p-[20px] border">Доставку комплектующих или оборудования, требующего ремонта в&nbsp;СЦ**, обеспечивает производитель.</td>
+					<td class="p-[20px] border">Для замены комплектующих, подлежащих замене строго специалистами&nbsp;СЦ**, требуется доставка оборудования в&nbsp;СЦ (силами покупателя) или возможен выезд специалиста за&nbsp;дополнительную плату.</td>
+				</tr>
+				<tr>
+					<td colspan="2" class="p-[20px] border">Если вы&nbsp;хотите, чтобы комплектующие, подлежащие самостоятельной замене, были заменены специалистом&nbsp;СЦ, вы&nbsp;можете заказать эту услугу. За&nbsp;работы по&nbsp;замене вам будет выставлен счет.</td>
+				</tr>
+				<tr>
+					<td colspan="2" class="p-[20px] border">Количество телефонных консультаций неограниченно.</td>
+				</tr>
+				<tr>
+					<td colspan="2" class="p-[20px] border">Срок диагностики неисправных комплектующих не&nbsp;более 10&nbsp;рабочих дней</td>
+				</tr>
+				<tr>
+					<td colspan="2" class="p-[20px] border">Срок восстановления до&nbsp;
+						<nobr>5-ти</nobr> рабочих дней при наличии&nbsp;ЗЧ, до&nbsp;
+						<nobr>21-горабочего</nobr> дня- при отсутствии ЗЧ.</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="row justify-content-center">
+		<div class="col-md-12">
+			<h1><strong>Оборудование типа 3. Серверы High End: <nobr>4-х</nobr> процессорные серверы, Multiflex в&nbsp;сборе</strong></h1>
+			<ul class="list-image-[url(check-check-svgrepo-green-com.svg)] ml-[20px] mb-[20px]">
+				<li>Срок гарантии&nbsp;— 3&nbsp;года.</li>
+				<li>Территория обслуживания&nbsp;— территория заказчика****</li>
+				<li>Время реакции на&nbsp;обращение*&nbsp;— 4&nbsp;часа</li>
+				<li>Выезд осуществляется не&nbsp;позднее, чем через 2&nbsp;рабочих дня со&nbsp;дня принятия решения о&nbsp;необходимости решения проблемы на&nbsp;территории заказчика.</li>
+				<li>Доставка комплектующих или оборудования, подлежащих самостоятельной замене**, производится за&nbsp;счет производителя. Доставку комплектующих или оборудования, требующего ремонта в&nbsp;СЦ**, обеспечивает производитель.</li>
+				<li>Если вы&nbsp;хотите, чтобы комплектующие, подлежащие самостоятельной замене, были заменены специалистом&nbsp;СЦ, вы&nbsp;можете заказать эту услугу. За&nbsp;работы по&nbsp;замене вам будет выставлен счет.</li>
+				<li>Срок диагностики неисправных комплектующих не&nbsp;более 10&nbsp;рабочих дней</li>
+				<li>Срок восстановления до&nbsp;<nobr>5-ти</nobr> рабочих дней при наличии&nbsp;ЗЧ, до&nbsp;<nobr>21-го</nobr> рабочего дня- при отсутствии ЗЧ.</li>
+				<li>Количество телефонных консультаций неограниченно</li>
+			</ul>
+			<h1><strong>Дополнительные условия</strong></h1>
+			<ul class="list-image-[url(check-check-svgrepo-green-com.svg)] ml-[20px] mb-[20px]">
+				<li>Все бесплатные выезды осуществляются: Для СЦ&nbsp;в&nbsp;г. Москва&nbsp;— в&nbsp;пределах Малого бетонного кольца и&nbsp;населённых пунктов: Икша&nbsp;— Софрино&nbsp;— Зеленоградский&nbsp;— Ногинск&nbsp;— Звенигород&nbsp;— Краснознаменск&nbsp;— Алабино&nbsp;—
+					Электросталь&nbsp;— Бронницы.</li>
+				<li>В&nbsp;случае невозможности устранения неисправности на&nbsp;территории заказчика по&nbsp;причине выхода из&nbsp;строя оборудования по&nbsp;вине производителя доставка оборудования в&nbsp;СЦ и&nbsp;обратно осуществляется за&nbsp;счет производителя.</li>
+				<li>Региональное обслуживание оборудования производится по&nbsp;индивидуальному запросу.</li>
+				<li>Для СЦ&nbsp;в&nbsp;Москве обслуживание далее указанной зоны, но&nbsp;в&nbsp;пределах Московской области возможно за&nbsp;дополнительную плату, включающую транспортные и&nbsp;иные накладные расходы, связанные с&nbsp;выездом специалиста.</li>
+				<li>Неквалифицированные заявки на&nbsp;обслуживание техники в&nbsp;офисе заказчика, а&nbsp;именно неработоспособность оборудования по&nbsp;невнимательности клиента (отсутствие электропитания и&nbsp;т.д.) или неправильного обращения с&nbsp;оборудованием,
+					повлекшее выход системы из&nbsp;строя по&nbsp;вине заказчика, не&nbsp;входят в&nbsp;список гарантийных обязательств и&nbsp;оформляются как платный выезд специалиста. Неоплаченные счета влекут за&nbsp;собой прекращение обязательств по&nbsp;гарантийному
+					обслуживанию.</li>
+				<li>Изготовитель не&nbsp;отвечает за&nbsp;совместимость приобретаемого Оборудования с&nbsp;другим оборудованием или программным обеспечением, за&nbsp;исключением тех случаев, когда такая совместимость оговаривалась особо.</li>
+				<li>При отсутствии необходимых для выполнения гарантийных обязательств комплектующих Изготовитель оставляет за&nbsp;собой право предложить для замены другие эквивалентные (или лучшие) по&nbsp;техническим характеристикам комплектующие.</li>
+				<li>Гарантия на&nbsp;замененные компоненты прекращается вместе с&nbsp;гарантией на&nbsp;Оборудование.</li>
+				<li>Срок гарантийного обслуживания оборудования продлевается на&nbsp;время нахождения оборудования в&nbsp;СЦ.</li>
+				<li>Время работы СЦ&nbsp;— с&nbsp;10.00 до&nbsp;18.00 по&nbsp;московскому времени.</li>
+			</ul>
+		</div>
+	</div>
+	<div class="row justify-content-center">
+		<div class="col-md-12">
+			<h1 class="text-center">Расширенная гарантия на&nbsp;оборудование IntellectDigital</h1>
+		</div>
+	</div>
+	<div class="justify-items-center">
+		<div class="">
+			<h1><strong>Пакет расширенной гарантии «Обслуживание на&nbsp;месте установки»</strong></h1>
+			<div class="table-responsive">
+				<table class="table topSpace  w-[1200px] max-[1200px]:w-[930px] max-[990px]:w-[690px] max-[760px]:w-[510px] m-auto">
+					<tbody>
+						<tr class="table-light">
+							<td class="p-[20px] border-b-1">Кат. Продуктов 1</td>
+							<td class="p-[20px] border-b-1">Стоимость</td>
+						</tr>
+						<tr>
+							<td class="p-[20px] border-t-1">1&nbsp;год</td>
+							<td class="p-[20px] border-t-1">900&nbsp;руб.</td>
+						</tr>
+						<tr>
+							<td class="p-[20px] border-t-1">2&nbsp;года</td>
+							<td class="p-[20px] border-t-1">1 800&nbsp;руб.</td>
+						</tr>
+						<tr>
+							<td class="p-[20px] border-t-1">3&nbsp;года</td>
+							<td class="p-[20px] border-t-1">3 900&nbsp;руб.</td>
+						</tr>
+						<tr>
+							<td class="p-[20px] border-t-1">4&nbsp;года</td>
+							<td class="p-[20px] border-t-1">5 500&nbsp;руб.</td>
+						</tr>
+						<tr>
+							<td class="p-[20px] border-t-1">5&nbsp;лет</td>
+							<td class="p-[20px] border-t-1">8 600&nbsp;руб.</td>
+						</tr>
+						<tr class="table-light">
+							<td class="p-[20px] border-t-1">Кат. Продуктов 2</td>
+							<td class="p-[20px] border-t-1">Стоимость</td>
+						</tr>
+						<tr>
+							<td class="p-[20px] border-t-1">1&nbsp;год</td>
+							<td class="p-[20px] border-t-1">—</td>
+						</tr>
+						<tr>
+							<td class="p-[20px] border-t-1">2&nbsp;года</td>
+							<td class="p-[20px] border-t-1">2 500 руб</td>
+						</tr>
+						<tr>
+							<td class="p-[20px] border-t-1">3&nbsp;года</td>
+							<td class="p-[20px] border-t-1">6 400&nbsp;руб.</td>
+						</tr>
+						<tr>
+							<td class="p-[20px] border-t-1">4&nbsp;года</td>
+							<td class="p-[20px] border-t-1">8 700&nbsp;руб.</td>
+						</tr>
+						<tr>
+							<td class="p-[20px] border-t-1">5&nbsp;лет</td>
+							<td class="p-[20px] border-t-1">10 500&nbsp;руб.</td>
+						</tr>
+						<tr class="table-light">
+							<td class="p-[20px] border-t-1">Кат. Продуктов 3</td>
+							<td class="p-[20px] border-t-1">Стоимость</td>
+						</tr>
+						<tr>
+							<td class="p-[20px] border-t-1">4&nbsp;года</td>
+							<td class="p-[20px] border-t-1">10 500&nbsp;руб.</td>
+						</tr>
+						<tr>
+							<td class="p-[20px] border-t-1">5&nbsp;лет</td>
+							<td class="p-[20px] border-t-1">16&nbsp;000&nbsp;руб.</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<ul class="list-image-[url(check-check-svgrepo-green-com.svg)] ml-[20px] mb-[20px]">
+				<li>Телефонные консультации&nbsp;— время реакции на&nbsp;поступившую заявку не&nbsp;более <nobr>4-х</nobr> часов.</li>
+				<li>Выезд к&nbsp;заказчику не&nbsp;позднее, чем через 2&nbsp;рабочих дня со&nbsp;дня принятия решения о&nbsp;необходимости решения проблемы на&nbsp;территории заказчика.</li>
+				<li>Срок восстановления работоспособности в&nbsp;течении 5&nbsp;дней (при наличии ЗЧ).</li>
+				<li>При не&nbsp;возможности устранения неисправности на&nbsp;месте, доставка в&nbsp;СЦ и&nbsp;обратно за&nbsp;счет производителя</li>
+			</ul>
+		</div>
+	</div>
+	<div class="row justify-content-center">
+		<div class="col-md-12">
+			<h1><strong>Пакет расширенной гарантии «Гарантированное время обслуживания с&nbsp;выездом»</strong></h1>
+			<div class="table-responsive">
+				<table class="table topSpace w-[1200px] max-[1200px]:w-[930px] max-[990px]:w-[690px] max-[760px]:w-[510px] m-auto">
+					<tbody>
+						<tr class="table-light">
+							<td class="p-[20px] border-b-1">Кат. Продуктов 1</td>
+							<td class="p-[20px] border-b-1" >Стоимость</td>
+						</tr>
+						<tr>
+							<td class="p-[20px] border-b-1">1&nbsp;год</td>
+							<td class="p-[20px] border-b-1">2 300&nbsp;руб.</td>
+						</tr>
+						<tr>
+							<td class="p-[20px] border-b-1">2&nbsp;года</td>
+							<td class="p-[20px] border-b-1">4 200&nbsp;руб.</td>
+						</tr>
+						<tr>
+							<td class="p-[20px] border-b-1">3&nbsp;года</td>
+							<td class="p-[20px] border-b-1">6 000&nbsp;руб.</td>
+						</tr>
+						<tr>
+							<td class="p-[20px] border-b-1">4&nbsp;года</td>
+							<td class="p-[20px] border-b-1">9 200&nbsp;руб.</td>
+						</tr>
+						<tr>
+							<td class="p-[20px] border-b-1">5&nbsp;лет</td>
+							<td class="p-[20px] border-b-1">12 500&nbsp;руб.</td>
+						</tr>
+						<tr class="table-light">
+							<td class="p-[20px] border-b-1">Кат. Продуктов 2</td>
+							<td class="p-[20px] border-b-1">Стоимость</td>
+						</tr>
+						<tr>
+							<td class="p-[20px] border-b-1">1&nbsp;год</td>
+							<td class="p-[20px] border-b-1">3 200&nbsp;руб.</td>
+						</tr>
+						<tr>
+							<td class="p-[20px] border-b-1">2&nbsp;года</td>
+							<td class="p-[20px] border-b-1">4 800&nbsp;руб.</td>
+						</tr>
+						<tr>
+							<td class="p-[20px] border-b-1">3&nbsp;года</td>
+							<td class="p-[20px] border-b-1">7 800&nbsp;руб.</td>
+						</tr>
+						<tr>
+							<td class="p-[20px] border-b-1">4&nbsp;года</td>
+							<td class="p-[20px] border-b-1">11&nbsp;000&nbsp;руб.</td>
+						</tr>
+						<tr>
+							<td class="p-[20px] border-b-1" >5&nbsp;лет</td>
+							<td class="p-[20px] border-b-1">13&nbsp;900&nbsp;руб.</td>
+						</tr>
+						<tr class="table-light">
+							<td class="p-[20px] border-b-1">Кат. Продуктов 3</td>
+							<td class="p-[20px] border-b-1">Стоимость</td>
+						</tr>
+						<tr>
+							<td class="p-[20px] border-b-1">1&nbsp;год</td>
+							<td class="p-[20px] border-b-1">5 000&nbsp;руб.</td>
+						</tr>
+						<tr>
+							<td class="p-[20px] border-b-1">2&nbsp;года</td>
+							<td class="p-[20px] border-b-1">7 000&nbsp;руб.</td>
+						</tr>
+						<tr>
+							<td class="p-[20px] border-b-1">3&nbsp;года</td>
+							<td class="p-[20px] border-b-1">8 500&nbsp;руб.</td>
+						</tr>
+						<tr>
+							<td class="p-[20px] border-b-1">4&nbsp;года</td>
+							<td class="p-[20px] border-b-1">14&nbsp;500&nbsp;руб.</td>
+						</tr>
+						<tr>
+							<td class="p-[20px] border-t-1">5&nbsp;лет</td>
+							<td class="p-[20px] border-t-1">25&nbsp;000&nbsp;руб.</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<ul class="list-image-[url(check-check-svgrepo-green-com.svg)] ml-[20px] mb-[20px]">
+				<li>Телефонные консультации&nbsp;— время реакции на&nbsp;поступившую заявку не&nbsp;более <nobr>2-х</nobr> часов</li>
+				<li>Выезд к&nbsp;заказчику не&nbsp;позднее, чем через 24&nbsp;часа</li>
+				<li>Срок восстановления работоспособности в&nbsp;течении 72&nbsp;часов (при наличии ЗЧ).</li>
+				<li>При не&nbsp;возможности устранения неисправности на&nbsp;месте, доставка в&nbsp;СЦ и&nbsp;обратно за&nbsp;счет производителя</li>
+			</ul>
+			<h1><strong>Дополнительные условия:</strong></h1>
+			<ul class="list-image-[url(check-check-svgrepo-green-com.svg)] ml-[20px] mb-[20px]">
+				<li>
+					<nobr>4-й</nobr> и&nbsp;<nobr>5-й</nobr> год гарантийного обслуживания не&nbsp;включают стоимости вышедших из&nbsp;строя комплектующих.
+				</li>
+				<li>Пакет расширенной гарантии с&nbsp;гарантированным наличием ЗИП оформляется по&nbsp;запросу.</li>
+				<li>Пакет расширенной гарантии с&nbsp;расширенным временем телефонных консультаций по&nbsp;запросу.</li>
+				<li>Купить пакет расширенной гарантии можно в&nbsp;любой момент времени, но&nbsp;не&nbsp;позднее конца <nobr>2-го</nobr> года стандартной гарантии.</li>
+			</ul>
+		</div>
+	</div>
+	<hr>
+	<div class="row justify-content-center">
+		<div class="col-md-12">
+			<h1><strong>Пакет расширенной гарантии «Гарантированное время обслуживания с&nbsp;выездом»</strong></h1>
+			<p class="mb-[20px]">*Время реакции означает попытку решить проблему путем консультаций по&nbsp;телефону или электронной почте, а&nbsp;также удаленно по&nbsp;каналам связи. Телефонные консультации по&nbsp;восстановлению работоспособности оборудования производятся при наличии технического специалиста у&nbsp;заказчика. Под техническим специалистом понимается человек, способный сформулировать проблему и&nbsp;переслать по&nbsp;электронной почте журнал системных ошибок, выполнить обновление операционной системы или микрокода стандартными способами, описанными производителем в&nbsp;документации для пользователей. При отсутствии технического специалиста компания «СВЕТ Компьютерс» рекомендует воспользоваться услугами абонентского обслуживания или услугой одноразового диагностического выезда.</p>
+			<p class="mb-[20px]">** Комплектующие, подлежащие самостоятельной замене:</p>
+			<ul class="list-image-[url(check-check-svgrepo-green-com.svg)] ml-[20px] mb-[20px]">
+				<li>модули&nbsp;БП с&nbsp;горячей заменой</li>
+				<li>модули оперативной памяти (DIMM, SoDIMM)</li>
+				<li>контроллеры на&nbsp;шинах PCI, PCIe, требующие отключения не&nbsp;более <nobr>4-х</nobr> внутренних кабелей</li>
+				<li>карты расширения шины PCI, PCIe, PCI-x</li>
+				<li>жесткие диски, твердотельные диски, накопители для оптических дисков с&nbsp;функцией горячей замены или не&nbsp;требующие для своего монтажа/демонтажа снятия других компонентов сервера, требующих замены сертифицированным инженером</li>
+			</ul>
+			<p class="mb-[20px]">Комплектующие, требующие замены сертифицированным специалистом:</p>
+			<ul class="list-image-[url(check-check-svgrepo-green-com.svg)] ml-[20px] mb-[20px]">
+				<li>материнские платы,</li>
+				<li>процессоры,</li>
+				<li>контроллеры, имеющие более <nobr>4-х</nobr> внутренних подключений,</li>
+				<li>фиксированные&nbsp;БП или корпуса&nbsp;БП, имеющих модули горячей замены</li>
+			</ul>
+			<p>В&nbsp;остальных случаях требуется письменное подтверждение&nbsp;СЦ о&nbsp;возможности самостоятельного монтажа/демонтажа по&nbsp;электронной почте от&nbsp;представителя&nbsp;СЦ производителя.</p>
+			<p>***Типы оборудования</p>
+			<div class="table-responsive">
+				<table class="table topSpace mb-[20px] w-[1200px] max-[1200px]:w-[930px] max-[990px]:w-[690px] max-[760px]:w-[510px] m-auto">
+					<tbody>
+						<tr class="table-light">
+							<td class="p-[20px] border-b-1">
+								Тип 1
+							</td>
+							<td class="p-[20px] border-b-1">
+								Тип 2
+							</td>
+							<td class="p-[20px] border-b-1">
+								Тип 3
+							</td>
+						</tr>
+						<tr>
+							<td class="p-[20px] border-b-1">
+								ID&nbsp;CE2 110/110L
+							</td>
+							<td class="p-[20px] border-b-1">
+								ID&nbsp;CEN 150
+							</td>
+							<td class="p-[20px] border-b-1">
+								ID&nbsp;MS в&nbsp;сборе
+							</td>
+						</tr>
+						<tr>
+							<td class="p-[20px] border-b-1">
+								ID&nbsp;CE2 410/410L
+							</td>
+							<td class="p-[20px] border-b-1">
+								ID&nbsp;CEN 160
+							</td>
+							<td class="p-[20px] border-b-1">
+								&nbsp;
+							</td>
+						</tr>
+						<tr>
+							<td class="p-[20px] border-b-1">
+								ID&nbsp;CEN 410
+							</td>
+							<td class="p-[20px] border-b-1">
+								ID&nbsp;CEN 162
+							</td>
+							<td class="p-[20px] border-b-1">
+								&nbsp;
+							</td>
+						</tr>
+						<tr>
+							<td class="p-[20px] border-b-1">
+								ID&nbsp;CEN 420
+							</td>
+							<td class="p-[20px] border-b-1">
+								ID&nbsp;CEN 170
+							</td>
+							<td class="p-[20px] border-b-1">
+								&nbsp;
+							</td>
+						</tr>
+						<tr>
+							<td class="p-[20px] border-b-1">
+								ID&nbsp;CEN 110
+							</td>
+							<td class="p-[20px] border-b-1">
+								ID&nbsp;CEN 212
+							</td>
+							<td class="p-[20px] border-b-1">
+								&nbsp;
+							</td>
+						</tr>
+						<tr>
+							<td class="p-[20px] border-b-1">
+								ID&nbsp;CEN 120
+							</td>
+							<td class="p-[20px] border-b-1">
+								ID&nbsp;CEN 250
+							</td>
+							<td class="p-[20px] border-b-1">
+								&nbsp;
+							</td>
+						</tr>
+						<tr>
+							<td class="p-[20px] border-b-1">
+								ID&nbsp;CEN 130L
+							</td>
+							<td class="p-[20px] border-b-1">
+								ID&nbsp;CEN 270
+							</td>
+							<td class="p-[20px] border-b-1">
+								&nbsp;
+							</td>
+						</tr>
+						<tr>
+							<td class="p-[20px] border-b-1">
+								&nbsp;
+							</td>
+							<td class="p-[20px] border-b-1">
+								ID&nbsp;CEN 440
+							</td>
+							<td class="p-[20px] border-b-1">
+								&nbsp;
+							</td>
+						</tr>
+						<tr>
+							<td class="p-[20px] border-b-1">
+								&nbsp;
+							</td>
+							<td class="p-[20px] border-b-1">
+								ID&nbsp;CEN 450TS
+							</td>
+							<td class="p-[20px] border-b-1">
+								&nbsp;
+							</td>
+						</tr>
+						<tr>
+							<td class="p-[20px] border-b-1">
+								&nbsp;
+							</td>
+							<td class="p-[20px] border-b-1">
+								ID&nbsp;CEN 460
+							</td>
+							<td class="p-[20px] border-b-1">
+								&nbsp;
+							</td>
+						</tr>
+						<tr>
+							<td class="p-[20px] border-b-1">
+								&nbsp;
+							</td>
+							<td class="p-[20px] border-b-1">
+								ID&nbsp;CEN 560
+							</td>
+							<td class="p-[20px] border-b-1">
+								&nbsp;
+							</td>
+						</tr>
+						<tr>
+							<td class="p-[20px] border-b-1">
+								&nbsp;
+							</td>
+							<td class="p-[20px] border-b-1">
+								ID&nbsp;MS CEN
+							</td>
+							<td class="p-[20px] border-b-1">
+								&nbsp;
+							</td>
+						</tr>
+						<tr>
+							<td class="p-[20px] border-b-1">
+								&nbsp;
+							</td>
+							<td class="p-[20px] border-b-1">
+								ID&nbsp;NS 212
+							</td>
+							<td class="p-[20px] border-b-1">
+								&nbsp;
+							</td>
+						</tr>
+						<tr>
+							<td class="p-[20px] border-b-1">
+								&nbsp;
+							</td>
+							<td class="p-[20px] border-b-1">
+								ID&nbsp;SS 212AVS
+							</td>
+							<td class="p-[20px] border-b-1">
+								&nbsp;
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<p class="mb-[20px]">**** Выезд специалиста осуществляется в&nbsp;случае, если нет возможности решить проблему удаленно по&nbsp;телефону, иным каналам связи или электронным способом.</p>
+		</div>
+	</div>
+</div>
+			</div>
+			<div class=" bg-[#282828] flex flex-wrap justify-center gap-[10px] p-[10px] m-auto">
+				<ul class="text-[white] list-image-[url(svg_arrow.svg)] w-[300px]"> О компании 
+					<li class="mb-[10px] mt-[10px] text-[#797979] ml-[20px] hover:underline"><a href="aboutcompany.html">О нас</a></li>
+					<li class="mb-[10px] mt-[10px] text-[#797979] ml-[20px] hover:underline"><a>Мероприятия</a></li>
+					<li class="mb-[10px] mt-[10px] text-[#797979] ml-[20px] hover:underline"><a href="partners.html">Партнеры</a></li>
+					<li class="mb-[10px] mt-[10px] text-[#797979] ml-[20px] hover:underline"><a href="primervnedr.html">Примеры внедрений</a></li>
+					<li class="mb-[10px] mt-[10px] text-[#797979] ml-[20px] hover:underline"><a href="jobopenings.html">Вакансии</a></li>
+					<li class="mb-[10px] mt-[10px] text-[#797979] ml-[20px] hover:underline"><a href="contatcs.html">Контактная информация</a></li>
+					<li class="mb-[10px] mt-[10px] text-[#797979] ml-[20px] hover:underline"><a href="documents.html">Документы регламентирующие деятельность компании</a></li>
+				</ul>
+				<ul class="text-[white] list-image-[url(svg_arrow.svg)] w-[300px]"> Решения
+					<li class="mb-[10px] mt-[10px] text-[#797979] ml-[20px] hover:underline"><a href="automedical.html">АИС для лечебного учреждения</a></li>
+					<li class="mb-[10px] mt-[10px] text-[#797979] ml-[20px] hover:underline"><a href="1cspeed.html">Ускорение работы 1С</a></li>
+					<li class="mb-[10px] mt-[10px] text-[#797979] ml-[20px] hover:underline"><a href="resheniya_dlya_riteyla.html"> Решения для ритейла</a></li>
+					<li class="mb-[10px] mt-[10px] text-[#797979] ml-[20px] hover:underline"><a href="virtualisation.html"> Виртуализация</a></li>
+					<li class="mb-[10px] mt-[10px] text-[#797979] ml-[20px] hover:underline"><a href="mnogoobrabotka.html"> Многопроцессорная обработка данных</a></li>
+				</ul>
+				<ul class="text-[white] list-image-[url(svg_arrow.svg)] w-[300px]"> Поддержка
+					<li class="mb-[10px] mt-[10px] text-[#797979] ml-[20px] hover:underline"><a href="support.html">Техническая поддержка</a></li>
+					<li class="mb-[10px] mt-[10px] text-[#797979] ml-[20px] hover:underline"><a href="outsorcing.html">Аутсорсинг</a></li>
+					<li class="mb-[10px] mt-[10px] text-[#797979] ml-[20px] hover:underline"><a href="support_garantiya.html">Гарантийная поддержка</a></li>
+					<li class="mb-[10px] mt-[10px] text-[#797979] ml-[20px] hover:underline"><a href="packets-standart-and-rashirenie.html">Условия гарантии</a></li>
+					<li class="mb-[10px] mt-[10px] text-[#797979] ml-[20px] hover:underline"><a href="ask_and_question.html">Вопросы и ответы</a></li>
+				</ul>
+				<ol class="text-[white] w-[292px] "> Контактная информация
+				<li class="mb-[10px] mt-[10px] text-[#797979]">Компания АО «КБ Свет Компьютерс»</li>
+					<li class="mb-[10px] text-[#797979]">проезд Березовой рощи  12, подъезд 1 (последний с правой стороны), этаж 3</li>
+					<li class="mb-[10px] text-[#797979]">Москва, 125252</li>
+					<li class="mb-[10px] text-[#797979]">ИНН: 7743543546</li>
+					<li class="mb-[10px] text-[#797979]">Юридический адрес: 125130, г. Москва, Старопетровский проезд, д. 7А, стр. 7, этаж 1
+ОКВЭД ОК 029-2014 (КДЕС Ред. 2) – 46.51</li>
+					<li class="mb-[10px] ">Пн-Пт с 9:30 до 18:00  | <span class="text-[#7dc01d] hover:text-[#527e13] hover:underline">svet@svetcorp.net</span>  | <span class="text-[#7dc01d] hover:text-[#527e13] hover:underline">+7 495 795-02-95</span></li>
+				</ol>
+			</div>
+			<div class="bg-[#222] py-[20px]">
+				<div class="flex justify-center ">
+					<div class="text-[#888] mr-[600px] max-[990px]:mr-[400px] max-[780px]:mr-[200px]">
+				© 1999–2020, АО «КБ СВЕТ Компьютерс»
+					</div>
+					<div class="text-[#888] hover:underline">
+						<a href="https://mpm.st/">
+					Made by .mpmstudio
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

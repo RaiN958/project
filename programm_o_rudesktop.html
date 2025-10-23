@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Title</title>
+		<link rel="stylesheet" href="main.css" />
+		<link rel="stylesheet" href="dist/main.css" />
+		<link rel="stylesheet" href="normalize.css" />
+    </head>
+    <body>
+		<div class="navigate h-[67px] bg-[#222] outline-[black] sticky top-0 z-[100] ">
+			<div class="flex mx-[103px] max-[1200px]:mx-[1px]">
+			<div class="logo mr-[150px] p-[16px]">
+				<a href="index.html">
+				<img src="logo.png" class="min-w-max">
+				</a>
+			</div>
+				<div class="flex text-center items-center text-[.875rem] max-[990px]:hidden">
+					<div class="text-[#fff] overflow-hidden w-[127px] h-[42px] mt-[20px] duration-150 hover:text-[#527e13] hover:border-b-[5px]">
+						<a href="aboutcompany.html">
+					О КОМПАНИИ
+						</a>
+					</div>
+					<div class="text-[#fff] overflow-hidden w-[127px] h-[42px] mt-[20px] duration-150 hover:text-[#527e13] hover:border-b-[5px]">
+						<a href="products.html"> 
+					ПРОДУКТЫ
+						</a>
+					</div>
+					<div class="text-[#fff] overflow-hidden w-[127px] h-[42px] mt-[20px] duration-150 hover:text-[#527e13] hover:border-b-[5px]">
+						<a href="resheniya.html">
+						РЕШЕНИЯ
+						</a>
+					</div>
+					<div class="text-[#fff] overflow-hidden w-[127px] h-[42px] mt-[20px] duration-150 hover:text-[#527e13] hover:border-b-[5px]">
+						<a href="support.html">
+						
+						ПОДДЕРЖКА
+						
+						</a>
+					</div>
+					<div class="text-[#fff] overflow-hidden w-[170px] h-[42px] mt-[20px] duration-150 hover:text-[#527e13] hover:border-b-[5px]">
+						<a href="offers.html">
+						
+						СПЕЦПРЕДЛОЖЕНИЯ
+						
+						</a>
+					</div>
+					<div class="text-[#7dc01d] overflow-hidden w-[127px] h-[42px] mt-[20px] duration-150 hover:text-[#527e13] hover:border-b-[5px]">
+						<a href="tel:">+7 495 795-02-95</a>
+					</div>
+				</div>
+				<div class="menu-toggle absolute right-0 mt-[20px] mr-[10px] hidden max-[990px]:block cursor-pointer transition-discrete " id="menu-toggle">
+							<img src="img/list-svgrepo-com.svg" />
+						</div>
+			</div>
+		</div>
+    <nav class="nav absolute sticky top-[67px] z-[100] fixed z-20 bg-[#222] right-0 text-[white] w-[470px text-lg p-[10px] hidden transition-discrete min-[991px]:!hidden " id="nav">
+      <ul>
+		  <div class="mb-[10px] ml-[10px]"><button class="accordion">О компании</button>
+			  <div class="hidden">
+				  <ul class="ml-[30px] text-sm">
+			  <li class="mb-[10px]" ><a href="aboutcompany.html" class="mb-[10px]">
+			О НАС
+				</a>
+			  <li class="mb-[10px]"><a href="news.html" >
+			НОВОСТИ
+				  </a></li>
+					<li class="mb-[10px]"><a href="partners.html" >
+			ПАРТНЕРЫ
+				  </a></li>
+					<li class="mb-[10px]"><a href="primervnedr.html" >
+			ПРИМЕРЫ ВНЕДРЕНИЙ
+				  </a></li>
+					<li class="mb-[10px]"><a href="licenses.html" >
+			СЕРТИФИКАТЫ И ЛИЦЕНЗИИ
+				  </a></li>
+					<li class="mb-[10px]"><a href="jobopenings.html" >
+			ВАКАНСИИ
+				  </a></li>
+					<li class="mb-[10px]"><a href="contatcs.html" >
+			КОНТАКТЫ
+				  </a></li>
+					  </ul>
+			  </div>
+		  </div>
+		  <li class="mb-[10px] ml-[10px]"><a href="products.html">Продукты</a></li>
+		  <li class="mb-[10px] ml-[10px]"><a href="resheniya.html">Решения</a></li>
+		  <div class="mb-[10px] ml-[10px]"><button class="accordion">Поддержка</button>
+			  <div class="hidden text-sm ml-[30px]">
+			  <li class="mb-[10px]" ><a href="support.html" class="mb-[10px]">
+			Техническая поддержка
+				</a>
+			  <li class="mb-[10px]"><a href="outsorcing.html" >
+			Аутсорсинг
+				  </a></li>
+					<li class="mb-[10px]"><a href="support_garantiya.html" >
+			Гарантийная подержка
+				  </a></li>
+					<li class="mb-[10px]"><a href="packets-standart-and-rashirenie.html" >
+			Пакеты стандартной и расширенной гарантии
+				  </a></li>
+					<li class="mb-[10px]"><a href="ask_and_question.html" >
+			Вопросы и ответы
+				  </a></li>
+			  </div>
+		  </div>
+		  <li class="mb-[10px] ml-[10px]"><a href="offers.html">Спецпредложения</a></li>
+		<li class="mb-[10px] ml-[10px] text-[#7dc01d] duration-150 hover:text-[#527e13] ">+7 495 795-02-95</li>
+      </ul>
+    </nav>
+		<script>
+  const toggleBtn = document.getElementById('menu-toggle');
+  const navMenu = document.getElementById('nav');
+
+  toggleBtn.addEventListener('click', () => {
+    if (navMenu.style.display === 'block') {
+      navMenu.style.display = 'none';
+    } else {
+      navMenu.style.display = 'block';
+    }
+  });
+</script>
+		<script src="accordeon.js"></script>
+		<div class="justify-items-center">
+				<h1 class="">
+					Программное обеспечение RuDesktop
+				</h1>
+				<div>
+				<img src="lines.svg" class="justify-items-center w-[100px] mb-[25px]" ></div>
+			</div>
+		<div class="w-[1140px] m-auto justify-center max-[1200px]:w-[930px] max-[990px]:w-[690px] max-[760px]:w-[510px]">
+			<img class="m-auto" src="dist/rudesktop%20_2.jpg">
+			<p class="mb-[30px]">Компания ООО «Передовые технологии» — разработчик отечественного программного обеспечения RuDesktop для обеспечения удаленного доступа и управления конфигурациями устройств. Компания была основана в 2022 году специалистами с обширным опытом в области разработки ПО, коммерческой реализации и послепродажного сопровождения в финансовой сфере.</p>
+			<p class="mb-[30px]">RuDesktop является полностью российской разработкой. Программный комплекс успешно прошел «государственную регистрацию программы для ЭВМ» и внесен в реестре программ под № 2022667530 от 21.09.2022, а также включен в Единый реестр российских программ для электронных вычислительных машин и баз данных под № 15913 от 09.12.2022. После ухода с рынка иностранных вендоров является импортозамещающим продуктом таких решений по удаленному доступу как AnyDesk и TeamViewer, а также по управлению конфигурациями устройств Microsoft Endpoint Configuration Manager.</p>
+			<p class="mb-[30px]">Программное обеспечение имеет клиент-серверную архитектуру. Агент поддерживает работу на Windows, MacOS, Linux, включая российские ОС Astra Linux, РЕД ОС, Basalt и мобильной платформе Android. Сервер устанавливается на базе Astra Linux, Ubuntu и Debian. </p>
+			<p class="mb-[30px]">Консоль управления дает возможность из единого интерфейса управлять всем парком ПК, независимо от установленной ОС. TLS и 256 битное шифрование позволяют реализовать действительно безопасное подключение к удаленному ПК. Современный стек технологий Rust, Python, YAML обеспечивает стабильную и бесперебойную работу даже на ПК с минимальными системными требованиями. </p>
+			<p class="mb-[30px]">Консоль управления дает возможность из единого интерфейса управлять всем парком ПК, независимо от установленной ОС. TLS и 256 битное шифрование позволяют реализовать действительно безопасное подключение к удаленному ПК. Современный стек технологий Rust, Python, YAML обеспечивает стабильную и бесперебойную работу даже на ПК с минимальными системными требованиями. </p>
+			<p class="mb-[30px]">С момента релиза программу уже скачало более 200 тысяч пользователей. На данный момент среди клиентов уже более 100 компаний, включая крупные банки, государственные структуры, промышленные предприятия и многие другие. </p>
+			<p class="mb-[30px]"> Архитектура предусматривает 3 вида лицензий</p>
+			<table class="table table-hover mb-[20px] m-auto w-[1200px] max-[1200px]:w-[930px] max-[990px]:w-[690px] max-[760px]:w-[510px] m-auto"> 
+				<tbody> 
+					<tr class="border-t-1"> 
+							<td><br>
+					 </td>
+					<td class="p-[20px]"> 
+							Облачная версия 
+							(On-Cloud)
+						 </td>
+						<td > 
+							Локальная версия
+							(On-Premise)
+						 </td>
+						<td> 
+							Локальная версия UEM (On-Premise) 
+						 </td>
+					 </tr>
+					<tr class="border-t-1"> 
+						<td class="p-[10px]"> 
+							Удаленное управление
+						 </td>
+						<td> 
+							Да
+						 </td>
+						<td> 
+							Да
+						 </td>
+						<td> 
+							Да
+						 </td>
+					 </tr>
+					<tr class="border-t-1"> 
+						<td class="p-[10px]"> 
+							Защищенное соединение HTTPS (443 порт, TLS протокол)
+						 </td>
+						<td> 
+							Да
+						 </td>
+						<td> 
+							Да
+						 </td>
+						<td> 
+							Да
+						 </td>
+					 </tr>
+					<tr class="border-t-1"> 
+						<td class="p-[10px]"> 
+							Передача файлов
+						 </td>
+						<td> 
+							Да
+						 </td>
+						<td> 
+							Да
+						 </td>
+						<td> 
+							Да
+						 </td>
+					 </tr>
+					<tr class="border-t-1"> 
+						<td class="p-[10px]"> 
+							Адресная книга
+						 </td>
+						<td> 
+							Да
+						 </td>
+						<td> 
+							Да
+						 </td>
+						<td> 
+							Да
+						 </td>
+					 </tr>
+					<tr class="border-t-1"> 
+						<td class="p-[10px]"> 
+							Временный и постоянный пароль
+						 </td>
+						<td> 
+							Да
+						 </td>
+						<td> 
+							Да
+						 </td>
+						<td> 
+							Да
+						 </td>
+					 </tr>
+					<tr class="border-t-1"> 
+						<td class="p-[10px]"> 
+							Удаленная перезагрузка
+						 </td>
+						<td> 
+							Да
+						 </td>
+						<td> 
+							Да
+						 </td>
+						<td> 
+							Да
+						 </td>
+					 </tr>
+					<tr class="border-t-1"> 
+						<td class="p-[10px]"> 
+							Совместная работа
+						 </td>
+						<td> 
+							Да
+						 </td>
+						<td> 
+							Да
+						 </td>
+						<td> 
+							Да
+						 </td>
+					 </tr>
+					<tr class="border-t-1"> 
+						<td class="p-[10px]"> 
+							Текстовый чат
+						 </td>
+						<td> 
+							Да
+						 </td>
+						<td> 
+							Да
+						 </td>
+						<td> 
+							Да
+						 </td>
+					 </tr>
+					<tr class="border-t-1"> 
+						<td class="p-[10px]"> 
+							История подключений
+						 </td>
+						<td> 
+							Да
+						 </td>
+						<td> 
+							Да
+						 </td>
+						<td> 
+							Да
+						 </td>
+					 </tr>
+					<tr class="border-t-1"> 
+						<td class="p-[10px]"> 
+							Неограниченное количество управляющих устройств
+						 </td>
+						<td> 
+							Да
+						 </td>
+						<td> 
+							Да
+						 </td>
+						<td> 
+							Нет
+						 </td>
+					 </tr>
+					<tr class="border-t-1"> 
+						<td class="p-[10px]"> 
+							Неограниченное количество управляемых устройств
+						 </td>
+						<td> 
+							Да
+						 </td>
+						<td> 
+							Да
+						 </td>
+						<td> 
+							Нет
+						 </td>
+					 </tr>
+					<tr class="border-t-1"> 
+						<td class="p-[10px]"> 
+							Техническая поддержка
+						 </td>
+						<td> 
+							Да
+						 </td>
+						<td> 
+							Да
+						 </td>
+						<td> 
+							Да
+						 </td>
+					 </tr>
+					<tr class="border-t-1"> 
+						<td class="p-[10px]"> 
+							Хранение данных на своем сервере
+						 </td>
+						<td> 
+							Нет
+						 </td>
+						<td> 
+							Да
+						 </td>
+						<td> 
+							Да
+						 </td>
+					 </tr>
+					<tr class="border-t-1"> 
+						<td class="p-[10px]"> 
+							Работа в закрытом периметре
+						 </td>
+						<td> 
+							Нет
+						 </td>
+						<td> 
+							Да
+						 </td>
+						<td> 
+							Да
+						 </td>
+					 </tr>
+					<tr class="border-t-1"> 
+						<td class="p-[10px]"> 
+							Интеграция с AD, LDAP
+						 </td>
+						<td> 
+							Нет
+						 </td>
+						<td> 
+							Да
+						 </td>
+						<td> 
+							Да
+						 </td>
+					 </tr>
+					<tr class="border-t-1"> 
+						<td class="p-[10px]"> 
+							Интеграция с SIEM
+						 </td>
+						<td> 
+							Нет
+						 </td>
+						<td> 
+							Да
+						 </td>
+						<td> 
+							Да
+						 </td>
+					 </tr>
+					<tr class="border-t-1"> 
+						<td class="p-[10px]"> 
+							Управление правами и ролями на основании групп AD
+						 </td>
+						<td> 
+							Нет
+						 </td>
+						<td> 
+							Да
+						 </td>
+						<td> 
+							Да
+						 </td>
+					 </tr>
+					<tr class="border-t-1"> 
+						<td class="p-[10px]"> 
+							Поддержка до 10 000 устройств на одном сервере 
+						 </td>
+						<td> 
+							Нет
+						 </td>
+						<td> 
+							Да
+						 </td>
+						<td> 
+							Да
+						 </td>
+					 </tr>
+					<tr class="border-t-1"> 
+						<td class="p-[10px]"> 
+							Автоматическое обновление клиента
+						 </td>
+						<td> 
+							Нет
+						 </td>
+						<td> 
+							Нет
+						 </td>
+						<td> 
+							Да
+						 </td>
+					 </tr>
+					<tr class="border-t-1"> 
+						<td class="p-[10px]"> 
+							Удаленная установка и переустановка ОС
+						 </td>
+						<td> 
+							Нет
+						 </td>
+						<td> 
+							Нет
+						 </td>
+						<td> 
+							Да
+						 </td>
+					 </tr>
+					<tr class="border-t-1"> 
+						<td class="p-[10px]"> 
+							Установка и обновление ПО на устройствах или группах устройств
+						 </td>
+						<td> 
+							Нет
+						 </td>
+						<td> 
+							Нет
+						 </td>
+						<td> 
+							Да
+						 </td>
+					 </tr>
+					<tr class="border-t-1"> 
+						<td class="p-[10px]"> 
+							Удаление ПО на устройствах или группах устройств
+						 </td>
+						<td> 
+							Нет
+						 </td>
+						<td> 
+							Нет
+						 </td>
+						<td> 
+							Да
+						 </td>
+					 </tr>
+					<tr class="border-t-1"> 
+						<td class="p-[10px]"> 
+							Удаленное выполнение команд 
+						 </td>
+						<td> 
+							Нет
+						 </td>
+						<td> 
+							Нет
+						 </td>
+						<td> 
+							Да
+						 </td>
+					 </tr>
+					<tr class="border-t-1"> 
+						<td class="p-[10px]"> 
+							Удаленное исполнение скриптов
+						 </td>
+						<td> 
+							Нет
+						 </td>
+						<td> 
+							Нет
+						 </td>
+						<td> 
+							Да
+						 </td>
+					 </tr>
+					<tr class="border-t-1"> 
+						<td class="p-[10px]"> 
+							Загрузка файлов на удаленный компьютер
+						 </td>
+						<td> 
+							Нет
+						 </td>
+						<td> 
+							Нет
+						 </td>
+						<td> 
+							Да
+						 </td>
+					 </tr>
+					<tr class="border-t-1"> 
+						<td class="p-[10px]"> 
+							Написание собственных плейбуков Ansible
+						 </td>
+						<td> 
+							Нет
+						 </td>
+						<td> 
+							Нет
+						 </td>
+						<td> 
+							Да
+						 </td>
+					 </tr>
+					<tr class="border-t-1"> 
+						<td class="p-[10px]"> 
+							Инвентаризация оборудования и ПО, отчетность и мониторинг
+						 </td>
+						<td> 
+							Нет
+						 </td>
+						<td> 
+							Нет
+						 </td>
+						<td> 
+							Да
+						 </td>
+					 </tr>
+					<tr class="border-t-1"> 
+						<td class="p-[10px]"> 
+							Мониторинг логов ПО на удаленном устройстве
+						 </td>
+						<td> 
+							Нет
+						 </td>
+						<td> 
+							Нет
+						 </td>
+						<td> 
+							Да
+						 </td>
+					 </tr>
+				 </tbody>
+			 </table>
+			<p class=" mb-[30px]">RuDesktop — полностью отечественное решение. После ухода с рынка иностранных вендоров является импортозамещающим продуктом для удаленного доступа, а также по управлению конфигурациями устройств Unified endpoint management (UEM).</p>
+		</div>
+		<div>
+		<div class=" bg-[#282828] flex flex-wrap justify-center gap-[10px] p-[10px] m-auto">
+				<ul class="text-[white] list-image-[url(svg_arrow.svg)] w-[300px]"> О компании 
+					<li class="mb-[10px] mt-[10px] text-[#797979] ml-[20px] hover:underline"><a href="aboutcompany.html">О нас</a></li>
+					<li class="mb-[10px] mt-[10px] text-[#797979] ml-[20px] hover:underline"><a>Мероприятия</a></li>
+					<li class="mb-[10px] mt-[10px] text-[#797979] ml-[20px] hover:underline"><a href="partners.html">Партнеры</a></li>
+					<li class="mb-[10px] mt-[10px] text-[#797979] ml-[20px] hover:underline"><a href="primervnedr.html">Примеры внедрений</a></li>
+					<li class="mb-[10px] mt-[10px] text-[#797979] ml-[20px] hover:underline"><a href="jobopenings.html">Вакансии</a></li>
+					<li class="mb-[10px] mt-[10px] text-[#797979] ml-[20px] hover:underline"><a href="contatcs.html">Контактная информация</a></li>
+					<li class="mb-[10px] mt-[10px] text-[#797979] ml-[20px] hover:underline"><a href="documents.html">Документы регламентирующие деятельность компании</a></li>
+				</ul>
+				<ul class="text-[white] list-image-[url(svg_arrow.svg)] w-[300px]"> Решения
+					<li class="mb-[10px] mt-[10px] text-[#797979] ml-[20px] hover:underline"><a href="automedical.html">АИС для лечебного учреждения</a></li>
+					<li class="mb-[10px] mt-[10px] text-[#797979] ml-[20px] hover:underline"><a href="1cspeed.html">Ускорение работы 1С</a></li>
+					<li class="mb-[10px] mt-[10px] text-[#797979] ml-[20px] hover:underline"><a href="resheniya_dlya_riteyla.html"> Решения для ритейла</a></li>
+					<li class="mb-[10px] mt-[10px] text-[#797979] ml-[20px] hover:underline"><a href="virtualisation.html"> Виртуализация</a></li>
+					<li class="mb-[10px] mt-[10px] text-[#797979] ml-[20px] hover:underline"><a href="mnogoobrabotka.html"> Многопроцессорная обработка данных</a></li>
+				</ul>
+				<ul class="text-[white] list-image-[url(svg_arrow.svg)] w-[300px]"> Поддержка
+					<li class="mb-[10px] mt-[10px] text-[#797979] ml-[20px] hover:underline"><a href="support.html">Техническая поддержка</a></li>
+					<li class="mb-[10px] mt-[10px] text-[#797979] ml-[20px] hover:underline"><a href="outsorcing.html">Аутсорсинг</a></li>
+					<li class="mb-[10px] mt-[10px] text-[#797979] ml-[20px] hover:underline"><a href="support_garantiya.html">Гарантийная поддержка</a></li>
+					<li class="mb-[10px] mt-[10px] text-[#797979] ml-[20px] hover:underline"><a href="packets-standart-and-rashirenie.html">Условия гарантии</a></li>
+					<li class="mb-[10px] mt-[10px] text-[#797979] ml-[20px] hover:underline"><a href="ask_and_question.html">Вопросы и ответы</a></li>
+				</ul>
+				<ol class="text-[white] w-[292px] "> Контактная информация
+				<li class="mb-[10px] mt-[10px] text-[#797979]">Компания АО «КБ Свет Компьютерс»</li>
+					<li class="mb-[10px] text-[#797979]">проезд Березовой рощи  12, подъезд 1 (последний с правой стороны), этаж 3</li>
+					<li class="mb-[10px] text-[#797979]">Москва, 125252</li>
+					<li class="mb-[10px] text-[#797979]">ИНН: 7743543546</li>
+					<li class="mb-[10px] text-[#797979]">Юридический адрес: 125130, г. Москва, Старопетровский проезд, д. 7А, стр. 7, этаж 1
+ОКВЭД ОК 029-2014 (КДЕС Ред. 2) – 46.51</li>
+					<li class="mb-[10px] ">Пн-Пт с 9:30 до 18:00  | <span class="text-[#7dc01d] hover:text-[#527e13] hover:underline">svet@svetcorp.net</span>  | <span class="text-[#7dc01d] hover:text-[#527e13] hover:underline">+7 495 795-02-95</span></li>
+				</ol>
+			</div>
+			<div class="bg-[#222] py-[20px]">
+				<div class="flex justify-center ">
+					<div class="text-[#888] mr-[600px] max-[990px]:mr-[400px] max-[780px]:mr-[200px]">
+				© 1999–2020, АО «КБ СВЕТ Компьютерс»
+					</div>
+					<div class="text-[#888] hover:underline">
+						<a href="https://mpm.st/">
+					Made by .mpmstudio
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
