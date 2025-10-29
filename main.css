@@ -1,7 +1,5 @@
 @import "tailwindcss";
 
-@import "tailwindcss";
-
 .swiper-pagination-bullet-active {
   background-color: #7dc01d;
 }
@@ -12,13 +10,15 @@
 }
 
 @media (max-width:1200px) {
-.swiper	{
+.swiper
+	{
 	width: 930px;
 }
 }
 
 @media (max-width:990px) {
-.swiper	{
+.swiper
+	{
 	width: 690px;
 }
 }
@@ -35,3 +35,18 @@
 	overflow: hidden
 }
 
+.text-green {
+	color: #7dc01d;
+}
+
+.text-darkgreen {
+	color: #527e13;
+}
+
+.bg-green {
+	background-color: #7dc01d;
+}
+
+.mb-[20px] {
+	
+}
