@@ -251,12 +251,6 @@
   .mt-8 {
     margin-top: calc(var(--spacing) * 8);
   }
-  .mt-44 {
-    margin-top: calc(var(--spacing) * 44);
-  }
-  .mt-\[10px\] {
-    margin-top: 10px;
-  }
   .mt-\[70px\] {
     margin-top: 70px;
   }
@@ -274,9 +268,6 @@
   }
   .mr-5 {
     margin-right: calc(var(--spacing) * 5);
-  }
-  .mr-\[10px\] {
-    margin-right: 10px;
   }
   .mr-\[60px\] {
     margin-right: 60px;
@@ -305,9 +296,6 @@
   .mb-\[8\] {
     margin-bottom: 8;
   }
-  .mb-\[10px\] {
-    margin-bottom: 10px;
-  }
   .mb-\[25px\] {
     margin-bottom: 25px;
   }
@@ -331,9 +319,6 @@
   }
   .ml-8 {
     margin-left: calc(var(--spacing) * 8);
-  }
-  .ml-\[10px\] {
-    margin-left: 10px;
   }
   .ml-\[30px\] {
     margin-left: 30px;
@@ -500,6 +485,9 @@
   .w-\[445px\] {
     width: 445px;
   }
+  .w-\[500px\] {
+    width: 500px;
+  }
   .w-\[539px\] {
     width: 539px;
   }
@@ -589,9 +577,6 @@
   }
   .gap-8 {
     gap: calc(var(--spacing) * 8);
-  }
-  .gap-\[10px\] {
-    gap: 10px;
   }
   .gap-\[15px\] {
     gap: 15px;
@@ -728,9 +713,6 @@
   .p-5 {
     padding: calc(var(--spacing) * 5);
   }
-  .p-\[10px\] {
-    padding: 10px;
-  }
   .p-\[15px\] {
     padding: 15px;
   }
@@ -745,9 +727,6 @@
   }
   .px-\[5px\] {
     padding-inline: 5px;
-  }
-  .px-\[10px\] {
-    padding-inline: 10px;
   }
   .px-\[12px\] {
     padding-inline: 12px;
@@ -917,6 +896,11 @@
       width: 800px;
     }
   }
+  .max-\[1220px\]\:w-\[930px\] {
+    @media (width < 1220px) {
+      width: 930px;
+    }
+  }
   .max-\[1200px\]\:mx-\[1px\] {
     @media (width < 1200px) {
       margin-inline: 1px;
@@ -937,8 +921,8 @@
       margin-left: 15px;
     }
   }
-  .max-\[1116px\]\:w-\[920px\] {
-    @media (width < 1116px) {
+  .max-\[1140px\]\:w-\[920px\] {
+    @media (width < 1140px) {
       width: 920px;
     }
   }
@@ -987,6 +971,11 @@
       gap: 20px;
     }
   }
+  .max-\[940px\]\:w-auto {
+    @media (width < 940px) {
+      width: auto;
+    }
+  }
   .max-\[780px\]\:mr-\[200px\] {
     @media (width < 780px) {
       margin-right: 200px;
@@ -995,11 +984,6 @@
   .max-\[780px\]\:mr-auto {
     @media (width < 780px) {
       margin-right: auto;
-    }
-  }
-  .max-\[780px\]\:w-auto {
-    @media (width < 780px) {
-      width: auto;
     }
   }
   .max-\[760px\]\:h-auto {
